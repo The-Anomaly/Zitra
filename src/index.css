@@ -1,13 +1,127 @@
-body {
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  transition: 0.3s;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* Text Colors */
+  --text-color-001: #323b4b;
+  --text-color-002: #4e5d78;
+  --text-color-003: #8a94a6;
+  --text-color-004: #b0b7c3;
+
+  /* Bg Colors */
+  --bg-color-001: #c1c7d0;
+  --bg-color-002: #f3f3f3;
+  --bg-color-003: #fafbfc;
+  --bg-color-004: #ffffff;
+
+  /* Accent Colors */
+  --primary-green: #03a300;
+  --gradient-green: linear-gradient(
+    99.84deg,
+    #013f00 -25.41%,
+    #48d911 64.26%,
+    #5aff15 150.58%
+  );
+}
+
+/* Metropolis */
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/metropolis/Metropolis-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/fonts/metropolis/Metropolis-ExtraBold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 900;
+  font-display: swap;
+  src: url("assets/fonts/metropolis/Metropolis-Black.ttf") format("truetype");
+}
+
+/* Euclid Circular */
+@font-face {
+  font-family: "Euclid";
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/fonts/euclid/Euclid\ Circular\ A\ Light.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Euclid";
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/euclid/Euclid\ Circular\ A\ Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Euclid";
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/euclid/Euclid\ Circular\ A\ Medium.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Euclid";
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/euclid/Euclid\ Circular\ A\ SemiBold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Euclid";
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/euclid/Euclid\ Circular\ A\ Bold.ttf")
+    format("truetype");
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Euclid", sans-serif;
+  font-weight: 400;
+}
+
+/* Scrollbar */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-green);
 }
