@@ -28,5 +28,8 @@ export const RouteBuilder: RouteBuilderItem[] = [
     path: Routes.home,
     Layout: Layout,
     Element: Home,
+    props: {
+      active: "home"
+    }
   },
 ];

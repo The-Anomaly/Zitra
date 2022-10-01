@@ -93,7 +93,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Euclid", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  background: var(--bg-color-003);
+  font-size: 14px;
 }
 
 /* Scrollbar */
@@ -124,4 +126,38 @@ html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-green);
+}
+
+/* Page */
+.container {
+  margin: auto;
+  margin: auto;
+  max-width: 1260px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+img,
+svg {
+  width: auto;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font-family: "Euclid";
+  outline: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,0 +1,97 @@
+.footerBg {
+  background: #1b1f27;
+  position: relative;
+}
+.vec1 {
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+.vec2 {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  min-width: 120px;
+  right: 32%;
+  max-width: 130px;
+}
+.vec3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+}
+.footerWrap {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1.2fr 1.4fr;
+  font-weight: 400;
+  gap: 2.5rem;
+  row-gap: 1rem;
+  letter-spacing: 0.3px;
+}
+.logo {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+.txt1 {
+  max-width: 380px;
+  line-height: 2.2;
+}
+.ttl {
+  color: #c3ffc2;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  margin-top: 1rem;
+}
+.list {
+  list-style: none;
+}
+.list li {
+  margin-bottom: 1.4rem;
+}
+.list li a {
+}
+.socials {
+  display: flex;
+}
+.socials a {
+  margin-right: 1.5rem;
+}
+.socials img,
+.socials svg {
+  width: 22px;
+}
+.ttl2 {
+  color: #c3ffc2;
+  margin-bottom: 1rem;
+}
+.inputWrap {
+  display: flex;
+  height: 56px;
+  max-width: 430px;
+}
+.inputWrap input {
+  background: #32353d;
+  border: none;
+  height: 100%;
+  padding: 0 1rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: calc(100% - 122px);
+  color: #fff;
+}
+.inputWrap button {
+  background: var(--bg-color-004);
+  color: #1b1f27;
+  border: none;
+  height: 100%;
+  padding: 0 1.5rem;
+  font-weight: 600;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 14px;
+}

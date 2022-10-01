@@ -10,4 +10,8 @@
 
 export const Routes = {
   home: "/",
+  loans: "/loans",
+  investments: "/investments",
+  assetManagement: "/asset-management",
+  about: "/about",
 };
