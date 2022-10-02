@@ -1,0 +1,45 @@
+.securityContainer {
+  background-color: var(--primary-dark);
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 6rem;
+  max-width: 1200px;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  position: relative;
+  background-image: url(../../../assets/vectors/semiCircle.svg),
+    url(../../../assets/vectors/purpleStar.svg),
+    url(../../../assets/vectors/creamStar.svg),
+    url(../../../assets/vectors/greenRing.svg),
+    url(../../../assets/vectors/lightGreenRing.svg);
+  background-repeat: no-repeat;
+  background-position: 98.5% top, 56% 12%, 96.5% 84%, 43% 90%, 50.5% 93%;
+  background-size: 220px, 28px, 22px, 12px, 12px;
+}
+.txtSec {
+  max-width: 480px;
+}
+.ttl {
+  color: #c3ffc2;
+  font-size: 30px;
+  max-width: 300px;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.txt {
+  line-height: 2;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  margin-bottom: 1rem;
+}
+.btn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.img {
+  position: absolute;
+  bottom: 0;
+  right: 12%;
+  width: 40%;
+}

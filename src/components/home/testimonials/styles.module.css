@@ -1,0 +1,29 @@
+.testimonialsContainer {
+  padding-top: 3rem;
+  padding-bottom: 8.5rem;
+}
+.ttl {
+  text-align: center;
+  margin: auto;
+  color: var(--text-color-001);
+  margin-bottom: 3.5rem;
+  font-weight: 800;
+  font-family: "Metropolis";
+  font-size: 30px;
+  position: relative;
+  width: fit-content;
+}
+.zigzag {
+  position: absolute;
+  top: 34px;
+  left: 14.3rem;
+  width: 80px;
+}
+.vidWrap {
+  background: #e0e0e0;
+  width: 100%;
+  height: 430px;
+  border-radius: 40px;
+  max-width: 970px;
+  margin: auto;
+}

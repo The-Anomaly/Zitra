@@ -1,0 +1,80 @@
+.productsContainer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.ttl {
+  color: var(--text-color-001);
+  margin-bottom: 3rem;
+  font-weight: 800;
+  font-family: "Metropolis";
+  font-size: 36px;
+  position: relative;
+  width: fit-content;
+}
+.zigzag {
+  position: absolute;
+  top: 40px;
+  right: 3rem;
+  width: 114px;
+}
+.txt {
+  color: var(--text-color-002);
+  max-width: 600px;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+.cardList {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+}
+.card {
+  background: var(--bg-color-004);
+  border-radius: 12px;
+  padding: 2rem;
+}
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.icon img {
+}
+.green {
+  background: #d7ffd6;
+}
+.pink {
+  background: #fff6d6;
+}
+.purple {
+  background: #fed6ff;
+}
+.blue {
+  background: #d6f5ff;
+}
+.cardTtl {
+  color: var(--text-color-001);
+  font-family: "Metropolis";
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.cardTxt {
+  color: var(--text-color-002);
+  line-height: 2;
+  font-size: 14.3px;
+  margin-bottom: 1rem;
+}
+.cardLink {
+  color: var(--primary-green);
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-green);
+  padding-bottom: 2px;
+  letter-spacing: 0.1px;
+}

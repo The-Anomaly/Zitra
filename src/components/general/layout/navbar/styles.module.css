@@ -42,7 +42,6 @@
   bottom: -1.4rem;
 }
 button.navBtn {
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   border-radius: 4px;
+  padding: 14.5px 1.6rem;
 }

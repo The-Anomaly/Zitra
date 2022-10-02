@@ -1,0 +1,99 @@
+.howBg {
+  position: relative;
+}
+.howContainer {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+.txtSec {
+}
+.ttl {
+  color: var(--text-color-001);
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  font-family: "Metropolis";
+  font-size: 30px;
+  position: relative;
+  width: fit-content;
+}
+.zigzag {
+  position: absolute;
+  top: 34px;
+  width: 80px;
+  right: 7px;
+}
+.txt {
+  color: var(--text-color-002);
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 5rem;
+}
+.point {
+  max-width: 300px;
+  margin-bottom: 3rem;
+  position: relative;
+  margin-left: 3rem;
+}
+.point:last-of-type {
+  margin-bottom: 0;
+}
+.point::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 5px solid var(--primary-green);
+  border-radius: 50%;
+  position: absolute;
+  left: -3rem;
+  top: 4px;
+}
+.point::after {
+  content: "";
+  background-image: url(../../../assets/vectors/dashedLine.svg);
+  position: absolute;
+  left: -2.5rem;
+  height: 100%;
+  top: 34px;
+  width: 2px;
+  background-repeat: no-repeat;
+}
+.point:last-of-type::after {
+  height: calc(100% - 34px);
+}
+.pointList {
+  position: relative;
+}
+.pointList::before {
+  content: "";
+  background-image: url(../../../assets/vectors/dashedLine.svg);
+  position: absolute;
+  width: 2px;
+  height: 34px;
+  top: -48px;
+  left: 0.5rem;
+  background-position: center -3px;
+}
+.pointTtl {
+  color: var(--text-color-002);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2px;
+}
+.pointTxt {
+  color: var(--text-color-002);
+  font-size: 15px;
+  line-height: 2;
+}
+.img {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  width: 58%;
+}
+@media screen and (min-width: 1440px) {
+  .howContainer {
+    position: relative;
+  }
+}

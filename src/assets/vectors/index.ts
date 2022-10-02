@@ -8,6 +8,10 @@ import { ReactComponent as FooterVec2 } from "./footerVec2.svg";
 import { ReactComponent as FooterVec3 } from "./footerVec3.svg";
 import { ReactComponent as Facebook } from "./facebook.svg";
 import { ReactComponent as Twitter } from "./twitter.svg";
+import { ReactComponent as PagaLogo } from "./pagaLogo.svg";
+import { ReactComponent as SuntrustLogo } from "./suntrustLogo.svg";
+import { ReactComponent as SmallZigzag } from "./smallZigzag.svg";
+import { ReactComponent as SmallZigzag2 } from "./smallZigzag2.svg";
 
 export {
   ShortCurve,
@@ -20,4 +24,8 @@ export {
   FooterVec3,
   Facebook,
   Twitter,
+  PagaLogo,
+  SuntrustLogo,
+  SmallZigzag,
+  SmallZigzag2,
 };

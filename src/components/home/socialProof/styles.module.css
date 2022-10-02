@@ -1,0 +1,52 @@
+.proofContainer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.ttl {
+  color: var(--text-color-001);
+  margin-bottom: 4rem;
+  font-weight: 800;
+  font-family: "Metropolis";
+  font-size: 30px;
+  position: relative;
+  width: fit-content;
+}
+.zigzag {
+  position: absolute;
+  top: 32px;
+  right: 2rem;
+  width: 120px;
+}
+.logoWrap {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.logoWrap img,
+.logoWrap svg {
+  margin-right: 2.3rem;
+}
+.logo1 {
+  width: 94px;
+}
+.logo2 {
+  width: 78px;
+}
+.logo3 {
+  width: 58px;
+}
+.logo4 {
+  width: 128px;
+}
+.logo5 {
+  width: 80px;
+}
+.logo6 {
+  width: 160px;
+}
+.logo7 {
+  width: 120px;
+}
+.logo8 {
+  width: 80px;
+}

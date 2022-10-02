@@ -1,0 +1,63 @@
+.heroBg {
+  position: relative;
+}
+.heroContainer {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+.textSec {
+  width: 60%;
+}
+.ttl {
+  font-size: 4rem;
+  color: var(--primary-dark);
+  font-weight: 900;
+  font-family: "Metropolis";
+  margin-bottom: 2rem;
+  position: relative;
+}
+.zigzag {
+  position: absolute;
+  right: 2.5rem;
+  top: 56%;
+  width: 200px;
+}
+.txt {
+  color: var(--text-color-002);
+  line-height: 2;
+  max-width: 550px;
+  margin-bottom: 2rem;
+}
+.btn {
+  margin-bottom: 3rem;
+}
+.img {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  width: 46%;
+}
+.txt2 {
+  color: var(--primary-dark);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.txt2::after {
+  content: url(../../../assets/vectors/curvedArrow.svg);
+  margin-left: 1.2rem;
+}
+.points {
+  color: var(--text-color-001);
+  line-height: 2.3;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  padding-left: 1rem;
+  column-gap: 2rem;
+  font-size: 13px;
+  max-width: 500px;
+}
+@media screen and (min-width: 1440px) {
+  .heroContainer {
+    position: relative;
+  }
+}
