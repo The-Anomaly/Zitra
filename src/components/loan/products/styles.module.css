@@ -1,0 +1,112 @@
+.productBg {
+  position: relative;
+}
+.productContainer {
+  padding-top: 4rem;
+  padding-bottom: 9rem;
+  display: flex;
+  align-items: flex-end;
+}
+.productContainer::after {
+  content: "";
+  background: #fff6d6;
+  border-radius: 60px 0 0 60px;
+  height: 200px;
+  width: 52%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+.txtSec {
+  width: 50%;
+}
+.ttl {
+  color: var(--text-color-001);
+  font-size: 30px;
+  margin-bottom: 2rem;
+  font-family: "Metropolis";
+  font-weight: 800;
+}
+.txt {
+  color: var(--text-color-002);
+  line-height: 2;
+  letter-spacing: 0.2px;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+.pointList {
+  max-width: 450px;
+  padding-bottom: 1rem;
+}
+.point {
+  position: relative;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+}
+.point::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../assets/vectors/tickCircle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -3rem;
+}
+.pointTtl {
+  color: var(--text-color-001);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+.pointTxt {
+  color: var(--text-color-002);
+  line-height: 2;
+  position: relative;
+  margin-left: 1rem;
+}
+.pointTxt::before {
+  content: ".";
+  font-size: 28px;
+  line-height: 0;
+  position: absolute;
+  top: 7px;
+  left: -1rem;
+}
+.imgSec {
+  width: 50%;
+  max-width: 420px;
+}
+.img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverse.productContainer::after {
+  content: "";
+  background: #d7ffd6;
+  border-radius: 0 60px 60px 0;
+  height: 200px;
+  width: 43%;
+  left: 0;
+  right: unset;
+}
+.reverse .imgSec {
+  margin-right: auto;
+  margin-left: unset;
+  width: 50%;
+  max-width: 480px;
+}
+.reverse .txtSec {
+  width: 50%;
+}
+.txt2 {
+  color: var(--text-color-002);
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}

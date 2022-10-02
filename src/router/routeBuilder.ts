@@ -1,5 +1,5 @@
 import { Layout } from "components";
-import { Home } from "pages";
+import { Home, Loan } from "pages";
 import { RouteProps } from "react-router-dom";
 import { Routes } from "./routes";
 
@@ -30,6 +30,14 @@ export const RouteBuilder: RouteBuilderItem[] = [
     Element: Home,
     props: {
       active: "home"
+    }
+  },
+  {
+    path: Routes.loans,
+    Layout: Layout,
+    Element: Loan,
+    props: {
+      active: "loans"
     }
   },
 ];

@@ -13,6 +13,9 @@ import earningsIcon from "./earningsIcon.png";
 import investmentIcon from "./investmentIcon.png";
 import landingHowImg from "./landingHowImg.png";
 import landingSecurityImg from "./landingSecurityImg.png";
+import loanHeroImg from "./loanHeroImg.png";
+import raizImg from "./raizImg.png";
+import sharpalyImg from "./sharpalyImg.png";
 
 export {
   logo,
@@ -30,4 +33,7 @@ export {
   investmentIcon,
   landingHowImg,
   landingSecurityImg,
+  loanHeroImg,
+  raizImg,
+  sharpalyImg,
 };

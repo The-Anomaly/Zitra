@@ -1,0 +1,53 @@
+.heroBg {
+  position: relative;
+}
+.heroContainer {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+.textSec {
+  width: 60%;
+}
+.ttl {
+  font-size: 4rem;
+  color: var(--primary-dark);
+  font-weight: 900;
+  font-family: "Metropolis";
+  margin-bottom: 3rem;
+  position: relative;
+}
+.zigzag {
+  position: absolute;
+  left: 2rem;
+  bottom: -1.5rem;
+  width: 200px;
+}
+.txt {
+  color: var(--text-color-002);
+  line-height: 2;
+  max-width: 550px;
+  margin-bottom: 4.5rem;
+}
+.img {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  width: 46%;
+}
+.txt2 {
+  font-size: 30px;
+  color: var(--text-color-001);
+  font-family: "Metropolis";
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.txt2 svg {
+  margin-left: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .heroContainer {
+    position: relative;
+  }
+}
