@@ -13,6 +13,7 @@ import { ReactComponent as SuntrustLogo } from "./suntrustLogo.svg";
 import { ReactComponent as SmallZigzag } from "./smallZigzag.svg";
 import { ReactComponent as SmallZigzag2 } from "./smallZigzag2.svg";
 import { ReactComponent as ArrowDown } from "./arrowDown.svg";
+import { ReactComponent as WideZigzag } from "./wideZigzag.svg";
 
 export {
   ShortCurve,
@@ -30,4 +31,5 @@ export {
   SmallZigzag,
   SmallZigzag2,
   ArrowDown,
+  WideZigzag,
 };

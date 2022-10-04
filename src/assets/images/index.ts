@@ -16,6 +16,17 @@ import landingSecurityImg from "./landingSecurityImg.png";
 import loanHeroImg from "./loanHeroImg.png";
 import raizImg from "./raizImg.png";
 import sharpalyImg from "./sharpalyImg.png";
+import investmentsHeroImg from "./investmentsHeroImg.png";
+import investmentOptionImg1 from "./investmentOptionImg1.png";
+import investmentOptionImg2 from "./investmentOptionImg2.png";
+import assetsHeroImg from "./assetsHeroImg.png";
+import assetsOptionImg1 from "./assetsOptionImg1.png";
+import assetsOptionImg2 from "./assetsOptionImg2.png";
+import assetsOptionImg3 from "./assetsOptionImg3.png";
+import assetsOptionImg4 from "./assetsOptionImg4.png";
+import assetsOptionImg5 from "./assetsOptionImg5.png";
+import assetsOptionImg6 from "./assetsOptionImg6.png";
+import assetsOptionImg7 from "./assetsOptionImg7.png";
 
 export {
   logo,
@@ -36,4 +47,15 @@ export {
   loanHeroImg,
   raizImg,
   sharpalyImg,
+  investmentsHeroImg,
+  investmentOptionImg1,
+  investmentOptionImg2,
+  assetsHeroImg,
+  assetsOptionImg1,
+  assetsOptionImg2,
+  assetsOptionImg3,
+  assetsOptionImg4,
+  assetsOptionImg5,
+  assetsOptionImg6,
+  assetsOptionImg7,
 };

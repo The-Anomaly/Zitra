@@ -56,7 +56,9 @@ const Products = () => {
         </div>
       </section>
       <section className={styles.productBg}>
-        <div className={`container ${styles.productContainer} ${styles.reverse}`}>
+        <div
+          className={`container ${styles.productContainer} ${styles.reverse}`}
+        >
           <div className={styles.txtSec}>
             <h2 className={styles.ttl}>Zitra Sharpaly</h2>
             <p className={styles.txt}>
@@ -66,8 +68,9 @@ const Products = () => {
               rates are highly competitive, and we have a quick turnaround time.
             </p>
             <div className={styles.pointList}>
-              <p className={styles.txt2}>A lot of businessess choose us because we offer:</p>
-
+              <p className={styles.txt2}>
+                A lot of businessess choose us because we offer:
+              </p>
               <div className={styles.point}>
                 <p className={styles.pointTtl}>Quick turnaround time</p>
               </div>

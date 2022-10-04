@@ -1,0 +1,38 @@
+.optionContainer {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.txtSec {
+  width: 40%;
+  padding-top: 2.5rem;
+}
+.ttl {
+  font-family: "Metropolis";
+  font-weight: 800;
+  color: var(--text-color-001);
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+}
+.txt1 {
+  color: var(--text-color-002);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 2;
+  letter-spacing: 0.2px;
+}
+.txt2 {
+  color: var(--text-color-002);
+  line-height: 2;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.1px;
+}
+.btn {
+}
+.img {
+  width: 53%;
+}
+.optionContainer:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}

@@ -1,5 +1,5 @@
 import { Layout } from "components";
-import { Home, Loan } from "pages";
+import { AssetManagement, Home, Investments, Loan } from "pages";
 import { RouteProps } from "react-router-dom";
 import { Routes } from "./routes";
 
@@ -38,6 +38,22 @@ export const RouteBuilder: RouteBuilderItem[] = [
     Element: Loan,
     props: {
       active: "loans"
+    }
+  },
+  {
+    path: Routes.investments,
+    Layout: Layout,
+    Element: Investments,
+    props: {
+      active: "investments"
+    }
+  },
+  {
+    path: Routes.assetManagement,
+    Layout: Layout,
+    Element: AssetManagement,
+    props: {
+      active: "asset-management"
     }
   },
 ];
