@@ -35,6 +35,12 @@
 /* Metropolis */
 @font-face {
   font-family: "Metropolis";
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/metropolis/Metropolis-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Metropolis";
   font-weight: 700;
   font-display: swap;
   src: url("assets/fonts/metropolis/Metropolis-Bold.ttf") format("truetype");

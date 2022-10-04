@@ -27,6 +27,13 @@ import assetsOptionImg4 from "./assetsOptionImg4.png";
 import assetsOptionImg5 from "./assetsOptionImg5.png";
 import assetsOptionImg6 from "./assetsOptionImg6.png";
 import assetsOptionImg7 from "./assetsOptionImg7.png";
+import teamMemberImg1 from "./teamMemberImg1.png";
+import teamMemberImg2 from "./teamMemberImg2.png";
+import teamMemberImg3 from "./teamMemberImg3.png";
+import teamMemberImg4 from "./teamMemberImg4.png";
+import teamMemberImg5 from "./teamMemberImg5.png";
+import teamMemberImg6 from "./teamMemberImg6.png";
+import teamMemberImg7 from "./teamMemberImg7.png";
 
 export {
   logo,
@@ -58,4 +65,11 @@ export {
   assetsOptionImg5,
   assetsOptionImg6,
   assetsOptionImg7,
+  teamMemberImg1,
+  teamMemberImg2,
+  teamMemberImg3,
+  teamMemberImg4,
+  teamMemberImg5,
+  teamMemberImg6,
+  teamMemberImg7,
 };
