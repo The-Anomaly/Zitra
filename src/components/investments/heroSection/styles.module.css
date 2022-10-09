@@ -17,9 +17,13 @@
   position: relative;
   max-width: 600px;
 }
+.ttl span {
+  position: relative;
+  display: inline-block;
+}
 .zigzag {
   position: absolute;
-  width: 370px;
+  width: 94%;
   left: 12px;
   bottom: -2.5rem;
 }
@@ -47,8 +51,81 @@
 .txt2 svg {
   margin-left: 1rem;
 }
+.mobileZigzag {
+  display: none;
+}
 @media screen and (min-width: 1440px) {
   .heroContainer {
     position: relative;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ttl {
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+  }
+  .textSec {
+    width: 50%;
+  }
+  .zigzag {
+    display: none;
+  }
+  .mobileZigzag {
+    display: block;
+    bottom: -1.2rem;
+    width: 80%;
+    left: 9%;
+    bottom: -1rem;
+  }
+  .txt2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ttl {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    max-width: 500px;
+  }
+  .textSec {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    display: block;
+    right: -1rem;
+    max-width: 650px;
+    top: -9rem;
+  }
+  .textSec2 {
+    margin-top: -7rem;
+  }
+  .txt2 {
+    margin-top: -7rem;
+    font-size: 20px;
+  }
+  .heroContainer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ttl {
+    font-size: 2.5rem;
+    max-width: 400px;
+  }
+  .img {
+    top: -6rem;
+  }
+  .txt2 {
+    margin-top: -4rem;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .heroContainer {
+    padding-bottom: 2rem;
   }
 }

@@ -36,3 +36,32 @@
 .optionContainer:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 800px) {
+  .optionContainer {
+    flex-direction: column-reverse !important;
+    padding-bottom: 4rem;
+    padding-top: 0;
+  }
+  .txtSec {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+  .ttl {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .txt1 {
+    margin-bottom: 8px;
+  }
+  .txt2 {
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ttl {
+    font-size: 20px;
+  }
+}
