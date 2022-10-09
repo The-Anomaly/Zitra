@@ -75,7 +75,7 @@ const Footer = () => {
                 <a>info@zitrainvestments.com</a>
               </li>
               <li>Address D59, Landbridge Avenue Oniru, Lekki Lagos.</li>
-              <p className={styles.ttl}>Socials</p>
+              <p className={`${styles.ttl} ${styles.socialsTtl}`}>Socials</p>
               <div className={styles.socials}>
                 <a>
                   <img src={instagram} alt="" />

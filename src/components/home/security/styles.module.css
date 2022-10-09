@@ -3,7 +3,7 @@
   color: #fff;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 6rem;
+  padding-left: 7%;
   max-width: 1200px;
   margin-top: 6rem;
   margin-bottom: 4rem;
@@ -42,4 +42,48 @@
   bottom: 0;
   right: 12%;
   width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .securityContainer {
+    margin-top: 0;
+  }
+  .img {
+    width: 34%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .img {
+    display: none;
+  }
+  .securityContainer {
+    padding: 3rem 3rem 4rem;
+    text-align: center;
+    background-position: 119% -30px, 97% 50%, 3% 64%, 20% 95%, 80% 93%;
+    background-size: 160px, 28px, 22px, 12px, 12px;
+    margin-bottom: 2rem;
+  }
+  .txtSec {
+    margin: auto;
+  }
+  .ttl {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    line-height: 1.35;
+  }
+  .txt {
+    font-size: 13px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2.3;
+  }
+  .btn {
+    width: 100%;
+    max-width: 240px;
+    padding: 18px 1rem;
+  }
 }

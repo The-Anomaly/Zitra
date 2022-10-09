@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   overflow-x: auto;
+  min-width: 1200px;
 }
 .logoWrap img,
 .logoWrap svg {
@@ -49,4 +50,20 @@
 }
 .logo8 {
   width: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .zigzag {
+    display: none;
+  }
+  .logoWrap img,
+  .logoWrap svg {
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ttl {
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+  }
 }

@@ -8,3 +8,10 @@
   font-size: 14px;
   letter-spacing: 0.3px;
 }
+
+@media screen and (max-width: 600px) {
+  .btn {
+    padding: 14px 4rem;
+    letter-spacing: normal;
+  }
+}

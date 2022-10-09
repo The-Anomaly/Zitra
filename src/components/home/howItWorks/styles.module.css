@@ -97,3 +97,43 @@
     position: relative;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .img {
+    width: 100%;
+    position: relative;
+    top: -2rem;
+    right: -1rem;
+    max-width: 600px;
+    margin-left: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ttl {
+    font-size: 24px;
+  }
+  .zigzag {
+    width: 60px;
+    top: 28px;
+  }
+  .txt {
+    font-size: 14px;
+  }
+  .pointTtl {
+    font-size: 16px;
+  }
+  .pointTxt {
+    font-size: 14px;
+  }
+  .point::before {
+    top: 0;
+  }
+  .img {
+    top: 1rem;
+  }
+  .howContainer {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+}

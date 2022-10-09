@@ -9,7 +9,13 @@ const Hero = () => {
       <section className={styles.heroBg}>
         <div className={`container ${styles.heroContainer}`}>
           <div className={styles.textSec}>
-            <h1 className={styles.ttl}>Making Loans simple for you <ZigZag className={styles.zigzag} /></h1>
+            <h1 className={styles.ttl}>
+              Making Loans{" "}
+              <span>
+                simple <ZigZag className={styles.zigzag} />
+              </span>{" "}
+              for you{" "}
+            </h1>
             <p className={styles.txt}>
               Start your journey with Zitra Investments and discover how simple
               money can be, whether you want to pay off credit card debt or
@@ -18,7 +24,8 @@ const Hero = () => {
             <Button className={styles.btn} onClick={() => {}}>
               Apply Now
             </Button>
-            <div>
+            <img className={styles.img} src={landingHeroImg} alt="" />
+            <div  className={styles.textSec2}>
               <p className={styles.txt2}>
                 Get loans up to 5million within minutes
               </p>
@@ -33,7 +40,7 @@ const Hero = () => {
               </ul>
             </div>
           </div>
-          <img className={styles.img} src={landingHeroImg} alt="" />
+ 
         </div>
       </section>
     </>

@@ -28,7 +28,6 @@
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
 }
 .card {
   background: var(--bg-color-004);
@@ -77,4 +76,45 @@
   border-bottom: 2px solid var(--primary-green);
   padding-bottom: 2px;
   letter-spacing: 0.1px;
+}
+@media screen and (max-width: 800px) {
+  .zigzag {
+    display: none;
+  }
+  .ttl {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+  .productsContainer {
+    padding-top: 2rem;
+  }
+  .cardList {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .card {
+    filter: drop-shadow(0px 2px 8px rgba(17, 17, 17, 0.04));
+    padding: 1.2rem;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .icon img {
+    width: 70%;
+  }
+  .cardTtl {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .cardTxt {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .cardLink {
+    font-weight: 500;
+  }
+  .txt {
+    font-size: 14px;
+  }
 }

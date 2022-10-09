@@ -27,3 +27,26 @@
   max-width: 970px;
   margin: auto;
 }
+
+@media screen and (max-width: 800px) {
+  .zigzag {
+    display: none;
+  }
+  .ttl {
+    font-size: 20px;
+    margin-bottom: 2.5rem;
+  }
+  .vidWrap {
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vidWrap {
+    height: 300px;
+    width: 96%;
+  }
+  .testimonialsContainer {
+    padding-bottom: 4rem;
+  }
+}

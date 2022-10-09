@@ -95,3 +95,21 @@
   border-bottom-right-radius: 8px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 800px) {
+  .vec1, .vec2, .vec3 {
+    display: none;
+  }
+  .footerWrap {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 3rem;
+  }
+  .socialsTtl {
+    margin-top: 2rem;
+  }
+  .ttl2 {
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+}

@@ -10,6 +10,30 @@ export interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ active }) => {
+  const [showNav, setShowNav] = React.useState(false);
+  const [reduceNavHeight, setReduceNavHeight] = React.useState(false);
+  const [mobile, setMobile] = React.useState(
+    window.innerWidth <= 800 ? true : false
+  );
+
+  const screenSizeUpdate = () => {
+    if (window.innerWidth <= 800) {
+      setMobile(true);
+    } else if (window.innerWidth > 800) {
+      setMobile(false);
+      setShowNav(false);
+    }
+  };
+  window.onresize = screenSizeUpdate;
+
+  const handleScroll = () => {
+    if (window.scrollY > 80) {
+      setReduceNavHeight(true);
+    } else {
+      setReduceNavHeight(false);
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
   const NavLinks = [
     {
       text: "Home",
@@ -39,23 +63,47 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
   ];
   return (
     <>
-      <header className={`container ${styles.header}`}>
-        <img className={styles.logo} src={logo} alt="logo" />
-        <nav className={styles.nav}>
-          <ul className={styles.navlist}>
-            {NavLinks.map((item, index) => (
-              <li
-                key={index}
-                className={item.state === active ? styles.activeItem : ""}
-              >
-                <Link to={item.link}>{item.text}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <Button className={styles.navBtn} onClick={() => {}}>
-          Apply now
-        </Button>
+      <header className={styles.navBg}>
+        <div
+          className={`container ${styles.header} ${
+            showNav ? styles.openMenu : ""
+          } ${reduceNavHeight ? styles.navHeight : ""}`}
+        >
+          <img className={styles.logo} src={logo} alt="logo" />
+          {(showNav && mobile) || !mobile ? (
+            <>
+              <nav className={styles.nav}>
+                <ul className={styles.navlist}>
+                  {NavLinks.map((item, index) => (
+                    <li
+                      key={index}
+                      className={item.state === active ? styles.activeItem : ""}
+                    >
+                      <Link onClick={() => setShowNav(false)} to={item.link}>
+                        {item.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <Button className={styles.navBtn} onClick={() => {}}>
+                Apply now
+              </Button>
+            </>
+          ) : (
+            ""
+          )}
+          <button
+            onClick={() => setShowNav(!showNav)}
+            className={`${styles.hamburger} ${
+              showNav ? styles.closeMenuBtn : ""
+            }`}
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
       </header>
     </>
   );
