@@ -207,9 +207,126 @@
   width: 47%;
 }
 .contactBtn {
-  border-radius: 0px;
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutContainer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .introSec {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .tag {
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .ttl1 {
+    font-size: 30px;
+  }
+  .txt1 {
+    margin-bottom: 0;
+    font-family: "Euclid";
+  }
+  .missionSec {
+    text-align: left;
+    margin-left: 0;
+    max-width: unset;
+    margin-bottom: 2rem;
+  }
+  .txt2 {
+    font-family: "Euclid";
+    line-height: 2;
+  }
+  .driveContainer {
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 0;
+  }
+  .driveTxtSec {
+    width: 100%;
+  }
+  .driveContainer::after {
+    bottom: 0;
+    height: 130px;
+    width: 85%;
+  }
+  .driveImg {
+    max-width: 300px;
+    margin-top: 2rem;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .driveTtl {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  .driveContainer {
+    padding-top: 0;
+  }
+  .teamContainer {
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  .memberList {
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .teamTtl {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .memberRole {
+    margin-bottom: 10px;
+  }
+  .memberCard {
+    padding: 2rem 1.3rem;
+  }
+  .teamTxt {
+    margin-bottom: 1.5rem;
+  }
+  .contactTxt {
+    font-family: 'Euclid';
+    line-height: 2;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+  .contactTtl {
+    margin-bottom: 10px;
+  }
+  .contactContainer {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ttl2 {
+    font-size: 18px;
+  }
+  .teamTtl,
+  .driveTtl {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .driveContainer::after {
+    height: 90px;
+  }
+  .inputWrap input {
+    height: 40px;
+  }
+  .inputWrap label {
+    margin-bottom: 12px;
+  }
+  .contactBtn {
+    margin-top: 0.8rem;
+  }
 }
