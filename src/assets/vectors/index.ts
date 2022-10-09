@@ -14,6 +14,7 @@ import { ReactComponent as SmallZigzag } from "./smallZigzag.svg";
 import { ReactComponent as SmallZigzag2 } from "./smallZigzag2.svg";
 import { ReactComponent as ArrowDown } from "./arrowDown.svg";
 import { ReactComponent as WideZigzag } from "./wideZigzag.svg";
+import { ReactComponent as MobileZigzag } from "./mobileZigzag.svg";
 
 export {
   ShortCurve,
@@ -32,4 +33,5 @@ export {
   SmallZigzag2,
   ArrowDown,
   WideZigzag,
+  MobileZigzag,
 };
