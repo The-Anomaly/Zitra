@@ -93,7 +93,7 @@
     position: relative;
     margin-left: auto;
     display: block;
-    right: -4rem;
+    right: -1rem;
     max-width: 650px;
     top: -9rem;
   }
@@ -118,8 +118,6 @@
   }
   .img {
     top: -6rem;
-    width: calc(100% + 3rem);
-    right: 0rem;
   }
   .txt2 {
     margin-top: -4rem;

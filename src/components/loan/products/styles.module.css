@@ -151,6 +151,7 @@
     max-width: 300px;
     margin-top: 2rem;
     width: 60%;
+    padding-left: 0;
   }
   .productContainer::after {
     left: 0;
@@ -169,8 +170,9 @@
   .reverse .imgSec {
     margin-left: auto;
     margin-right: 0;
-    width: 60%;
+    width: 70%;
     margin-top: -1rem;
+    padding-right: 0;
   }
 }
 
