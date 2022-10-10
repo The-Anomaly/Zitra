@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ active, apply }) => {
   window.onresize = screenSizeUpdate;
 
   const handleScroll = () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 80 && window.innerWidth > 800) {
       setReduceNavHeight(true);
     } else {
       setReduceNavHeight(false);
@@ -64,11 +64,11 @@ const Navbar: React.FC<NavbarProps> = ({ active, apply }) => {
   ];
   return (
     <>
-      <header className={styles.navBg}>
+      <header className={`${styles.navBg} ${showNav ? styles.openMenu : ""}`}>
         <div
-          className={`container ${styles.header} ${
-            showNav ? styles.openMenu : ""
-          } ${reduceNavHeight ? styles.navHeight : ""}`}
+          className={`container ${styles.header}  ${
+            reduceNavHeight ? styles.navHeight : ""
+          }`}
         >
           <img className={styles.logo} src={logo} alt="logo" />
           {(showNav && mobile) || !mobile ? (
