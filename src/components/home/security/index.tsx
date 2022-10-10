@@ -3,7 +3,7 @@ import { Button } from "components/general";
 import * as React from "react";
 import styles from "./styles.module.css";
 
-const Security = () => {
+const Security = ({ apply }) => {
   return (
     <section className={`container ${styles.securityContainer}`}>
       <div className={styles.txtSec}>
@@ -16,7 +16,7 @@ const Security = () => {
           version of our security certificate, which ensures the privacy and
           security of your information.
         </p>
-        <Button className={styles.btn} onClick={() => {}}>
+        <Button className={styles.btn} onClick={apply}>
           Get started now
         </Button>
       </div>

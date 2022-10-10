@@ -1,0 +1,87 @@
+.dialog {
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d5d6d780;
+}
+.body {
+  background: var(--bg-color-004);
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  width: 90%;
+  max-width: 550px;
+  text-align: center;
+  font-family: "Metropolis";
+}
+.tag {
+  color: var(--primary-green);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 1.2rem;
+}
+.ttl {
+  color: #231c4e;
+  font-size: 16px;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.txt {
+  color: #989fb1;
+  margin-bottom: 2.5rem;
+}
+.contactForm {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inputWrap {
+  text-align: left;
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+.inputWrap label {
+  color: #c1c7d0;
+  font-family: "Metropolis";
+  font-weight: 400;
+  margin-bottom: 12px;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+.inputWrap input {
+  width: 100%;
+  border: 1px solid #c1c7d0;
+  background: transparent;
+  height: 44px;
+  padding-left: 1rem;
+}
+.inputWrap textarea {
+  width: 100%;
+  border: 1px solid #c1c7d0;
+  background: transparent;
+  height: 150px;
+  resize: none;
+  padding-left: 1rem;
+  padding-top: 12px;
+}
+.halfWidth {
+  width: 47%;
+}
+.contactBtn {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 0px;
+  padding-top: 13px;
+  padding-bottom: 13px
+}

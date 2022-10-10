@@ -3,7 +3,7 @@ import { Button } from "components/general";
 import * as React from "react";
 import styles from "./styles.module.css";
 
-const Hero = () => {
+const Hero = ({ apply }) => {
   return (
     <>
       <section className={styles.heroBg}>
@@ -21,11 +21,11 @@ const Hero = () => {
               money can be, whether you want to pay off credit card debt or
               resolve unexpected expenses that arise during the year.
             </p>
-            <Button className={styles.btn} onClick={() => {}}>
+            <Button className={styles.btn} onClick={apply}>
               Apply Now
             </Button>
             <img className={styles.img} src={landingHeroImg} alt="" />
-            <div  className={styles.textSec2}>
+            <div className={styles.textSec2}>
               <p className={styles.txt2}>
                 Get loans up to 5million within minutes
               </p>
@@ -40,7 +40,6 @@ const Hero = () => {
               </ul>
             </div>
           </div>
- 
         </div>
       </section>
     </>

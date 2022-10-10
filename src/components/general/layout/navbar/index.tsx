@@ -7,9 +7,10 @@ import styles from "./styles.module.css";
 
 export interface NavbarProps {
   active: "home" | "loans" | "investments" | "asset-management" | "about";
+  apply: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ active }) => {
+const Navbar: React.FC<NavbarProps> = ({ active, apply }) => {
   const [showNav, setShowNav] = React.useState(false);
   const [reduceNavHeight, setReduceNavHeight] = React.useState(false);
   const [mobile, setMobile] = React.useState(
@@ -86,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
                   ))}
                 </ul>
               </nav>
-              <Button className={styles.navBtn} onClick={() => {}}>
+              <Button className={styles.navBtn} onClick={apply}>
                 Apply now
               </Button>
             </>

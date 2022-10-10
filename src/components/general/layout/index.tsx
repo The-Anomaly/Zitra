@@ -1,3 +1,4 @@
+import { ApplyNow } from "pages";
 import * as React from "react";
 import { Footer } from "./footer";
 import { Navbar, NavbarProps } from "./navbar";
@@ -8,10 +9,13 @@ interface LayoutProps extends NavbarProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, active }) => {
+  const [state, setState] = React.useState(false);
+
   return (
     <>
-      <Navbar active={active} />
-      <main className={styles.wrapper} >{children}</main>
+      <ApplyNow show={state} closeModal={() => setState(false)} />
+      <Navbar active={active} apply={() => setState(true)} />
+      <main className={styles.wrapper}>{children}</main>
       <Footer />
     </>
   );

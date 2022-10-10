@@ -41,7 +41,7 @@ const Footer = () => {
                 <Link to={Routes.about}>About Us</Link>
               </li>
               <li>
-                <a>Contact Us</a>
+                <Link to={`${Routes.about}#contact`}>Contact Us</Link>
               </li>
               <li>
                 <a>FAQs</a>
@@ -52,16 +52,16 @@ const Footer = () => {
             <p className={styles.ttl}>Our products</p>
             <ul className={styles.list}>
               <li>
-                <a>Zitra Raiz</a>
+                <Link to={`${Routes.loans}#raiz`}>Zitra Raiz</Link>
               </li>
               <li>
-                <a>Zitra Pesado</a>
+                <Link to={`${Routes.investments}#pesado`}>Zitra Pesado</Link>
               </li>
               <li>
-                <a>Zitra Sharpaly</a>
+                <Link to={`${Routes.loans}#sharpaly`}>Zitra Sharpaly</Link>
               </li>
               <li>
-                <a>Zitra Primero</a>
+                <Link to={`${Routes.investments}#primero`}>Zitra Primero</Link>
               </li>
             </ul>
           </div>
@@ -69,21 +69,29 @@ const Footer = () => {
             <p className={styles.ttl}>Contact</p>
             <ul className={styles.list}>
               <li>
-                <a>017002801</a>
+                <a href="tel:017002801" target={"_blank"} rel="noreferrer">
+                  017002801
+                </a>
               </li>
               <li>
-                <a>info@zitrainvestments.com</a>
+                <a
+                  href="mailto:info@zitrainvestments.com"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  info@zitrainvestments.com
+                </a>
               </li>
               <li>Address D59, Landbridge Avenue Oniru, Lekki Lagos.</li>
               <p className={`${styles.ttl} ${styles.socialsTtl}`}>Socials</p>
               <div className={styles.socials}>
-                <a>
+                <a target={"_blank"} rel="noreferrer">
                   <img src={instagram} alt="" />
                 </a>
-                <a>
+                <a target={"_blank"} rel="noreferrer">
                   <Twitter />
                 </a>
-                <a>
+                <a target={"_blank"} rel="noreferrer">
                   <Facebook />
                 </a>
               </div>

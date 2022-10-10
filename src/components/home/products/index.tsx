@@ -6,6 +6,8 @@ import {
   SmallZigzag,
 } from "assets";
 import * as React from "react";
+import { Link } from "react-router-dom";
+import { Routes } from "router";
 import styles from "./styles.module.css";
 
 interface ProductProps {
@@ -30,14 +32,9 @@ const ProductCard: React.FC<ProductProps> = ({
       </div>
       <p className={styles.cardTtl}>{title}</p>
       <p className={styles.cardTxt}>{text}</p>
-      <a
-        href={link}
-        target="_blank"
-        rel="noreferrer"
-        className={styles.cardLink}
-      >
+      <Link to={link} className={styles.cardLink}>
         Get started
-      </a>
+      </Link>
     </div>
   );
 };
@@ -57,7 +54,7 @@ const Products = () => {
           Get up to ₦5million today.
         </>
       ),
-      link: "",
+      link: `${Routes.loans}#raiz`,
     },
     {
       icon: earningsIcon,
@@ -71,7 +68,7 @@ const Products = () => {
           their business even if it is not registered.
         </>
       ),
-      link: "",
+      link: `${Routes.loans}#sharpaly`,
     },
     {
       icon: investmentIcon,
@@ -86,7 +83,7 @@ const Products = () => {
           annum.
         </>
       ),
-      link: "",
+      link: `${Routes.investments}#pesado`,
     },
     {
       icon: fundingIcon,
@@ -100,7 +97,7 @@ const Products = () => {
           and get rewarded with our flexible investment plans.
         </>
       ),
-      link: "",
+      link: `${Routes.investments}#primero`,
     },
   ];
   return (

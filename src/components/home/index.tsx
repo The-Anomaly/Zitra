@@ -6,14 +6,14 @@ import { Security } from "./security";
 import { SocialProof } from "./socialProof";
 import { Testimonials } from "./testimonials";
 
-const HomeUI = () => {
+const HomeUI = ({ apply }) => {
   return (
     <>
-      <Hero />
+      <Hero apply={apply} />
       <SocialProof />
       <Products />
       <HowItWorks />
-      <Security />
+      <Security apply={apply} />
       <Testimonials />
     </>
   );

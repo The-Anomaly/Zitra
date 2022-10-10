@@ -87,6 +87,7 @@ const AboutUI = () => {
         "Nkechi has over 6 years work experience in corporate services and customer experience, she has held several leadership positions in Service management in Page Financials.",
     },
   ];
+
   return (
     <>
       <section className={`container ${styles.aboutContainer}`}>
@@ -179,7 +180,7 @@ const AboutUI = () => {
           ))}
         </div>
       </section>
-      <section className={`container ${styles.contactContainer}`}>
+      <section id="contact" className={`container ${styles.contactContainer}`}>
         <p className={styles.tag}>Contact Us</p>
         <h5 className={styles.contactTtl}>Get in touch</h5>
         <p className={styles.contactTxt}>
@@ -195,9 +196,7 @@ const AboutUI = () => {
             <input type={"text"} />
           </div>
           <div className={styles.inputWrap}>
-            <label>
-              Email Address
-            </label>
+            <label>Email Address</label>
             <input type={"text"} />
           </div>
           <div className={styles.inputWrap}>

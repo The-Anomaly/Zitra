@@ -1,10 +1,14 @@
 import * as React from "react";
 import { LoanUI } from "components";
+import { ApplyNow } from "pages";
 
 const Loan = () => {
+  const [state, setState] = React.useState(false);
+
   return (
     <>
-      <LoanUI />
+      <ApplyNow show={state} closeModal={() => setState(false)} />
+      <LoanUI apply={() => setState(true)} />
     </>
   );
 };

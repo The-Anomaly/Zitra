@@ -3,10 +3,10 @@ import { Button } from "components/general";
 import * as React from "react";
 import styles from "./styles.module.css";
 
-const Products = () => {
+const Products = ({ apply }) => {
   return (
     <>
-      <section className={styles.productBg}>
+      <section id="raiz" className={styles.productBg}>
         <div className={`container ${styles.productContainer}`}>
           <div className={styles.txtSec}>
             <h2 className={styles.ttl}>Zitra Raiz</h2>
@@ -48,14 +48,14 @@ const Products = () => {
                 </p>
               </div>
             </div>
-            <Button onClick={() => {}}>Apply now</Button>
+            <Button onClick={apply}>Apply now</Button>
           </div>
           <div className={styles.imgSec}>
             <img className={styles.img} src={raizImg} />
           </div>
         </div>
       </section>
-      <section className={styles.productBg}>
+      <section id="sharpaly" className={styles.productBg}>
         <div
           className={`container ${styles.productContainer} ${styles.reverse}`}
         >
@@ -89,7 +89,7 @@ const Products = () => {
                 <p className={styles.pointTtl}>Flexible repayment structure</p>
               </div>
             </div>
-            <Button onClick={() => {}}>Apply now</Button>
+            <Button onClick={apply}>Apply now</Button>
           </div>
           <div className={styles.imgSec}>
             <img className={styles.img} src={sharpalyImg} />
