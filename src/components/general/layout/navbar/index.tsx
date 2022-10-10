@@ -70,27 +70,37 @@ const Navbar: React.FC<NavbarProps> = ({ active, apply }) => {
             reduceNavHeight ? styles.navHeight : ""
           }`}
         >
-          <img className={styles.logo} src={logo} alt="logo" />
+          <Link to={Routes.home}>
+            <img className={styles.logo} src={logo} alt="logo" />
+          </Link>
           {(showNav && mobile) || !mobile ? (
-            <>
-              <nav className={styles.nav}>
-                <ul className={styles.navlist}>
-                  {NavLinks.map((item, index) => (
-                    <li
-                      key={index}
-                      className={item.state === active ? styles.activeItem : ""}
-                    >
-                      <Link onClick={() => setShowNav(false)} to={item.link}>
-                        {item.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-              <Button className={styles.navBtn} onClick={apply}>
-                Apply now
-              </Button>
-            </>
+            <nav className={styles.nav}>
+              <ul className={styles.navlist}>
+                {NavLinks.map((item, index) => (
+                  <li
+                    key={index}
+                    className={item.state === active ? styles.activeItem : ""}
+                  >
+                    <Link onClick={() => setShowNav(false)} to={item.link}>
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ) : (
+            ""
+          )}
+          {(showNav && mobile) || !mobile ? (
+            <Button
+              className={styles.navBtn}
+              onClick={() => {
+                setShowNav(false);
+                apply();
+              }}
+            >
+              Apply now
+            </Button>
           ) : (
             ""
           )}

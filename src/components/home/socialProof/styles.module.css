@@ -21,7 +21,6 @@
   display: flex;
   align-items: center;
   overflow-x: auto;
-  min-width: 1200px;
 }
 .logoWrap img,
 .logoWrap svg {
@@ -29,27 +28,35 @@
 }
 .logo1 {
   width: 94px;
+  min-width: 94px;
 }
 .logo2 {
   width: 78px;
+  min-width: 78px;
 }
 .logo3 {
   width: 58px;
+  min-width: 58px;
 }
 .logo4 {
   width: 128px;
+  min-width: 128px;
 }
 .logo5 {
   width: 80px;
+  min-width: 80px;
 }
 .logo6 {
   width: 160px;
+  min-width: 160px;
 }
 .logo7 {
   width: 120px;
+  min-width: 120px;
 }
 .logo8 {
   width: 80px;
+  min-width: 80px;
 }
 
 @media screen and (max-width: 800px) {
