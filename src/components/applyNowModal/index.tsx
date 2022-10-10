@@ -37,6 +37,7 @@ const ApplyNowUI: React.FC<ApplyProps> = ({ show, closeModal, submit }) => {
   return (
     <aside className={styles.dialog} role={"dialog"}>
       <div ref={modalBody} className={styles.body}>
+        <button onClick={closeModal} className={styles.closeBtn}>&times;</button>
         <p className={styles.tag}>Lets get you started</p>
         <h1 className={styles.ttl}>PROVIDE US WITH YOUR DETAILS</h1>
         <p className={styles.txt}>... we will get to you in a snap!</p>
