@@ -28,6 +28,58 @@ const SocialProof = () => {
         <img className={styles.logo7} src={onepipeLogo} alt="" />
         <img className={styles.logo8} src={bidellusLogo} alt="" />
       </div>
+      <div className={styles.slider}>
+        <div className={styles.slideTrack}>
+          <div className={styles.slide}>
+            <PagaLogo className={styles.logo1} />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo2} src={providusLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <SuntrustLogo className={styles.logo3} />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo4} src={appzoneLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo5} src={youverifyLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo6} src={primepayLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo7} src={onepipeLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo8} src={bidellusLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <PagaLogo className={styles.logo1} />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo2} src={providusLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <SuntrustLogo className={styles.logo3} />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo4} src={appzoneLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo5} src={youverifyLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo6} src={primepayLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo7} src={onepipeLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo8} src={bidellusLogo} alt="" />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

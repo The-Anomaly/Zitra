@@ -21,20 +21,10 @@
 }
 .closeBtn {
   position: absolute;
-  right: 1rem;
+  right: 3rem;
   top: 1rem;
-  font-size: 2.5rem;
-  line-height: 0;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  color: #ff3232;
-  border: none;
-  font-weight: 600;
-  font-family: serif;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 .tag {
@@ -82,6 +72,7 @@
   background: transparent;
   height: 44px;
   padding-left: 1rem;
+  border-radius: 8px;
 }
 .inputWrap textarea {
   width: 100%;
@@ -100,7 +91,6 @@
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 1.5rem;
-  border-radius: 0px;
   padding-top: 13px;
   padding-bottom: 13px
 }
@@ -112,6 +102,6 @@
   .closeBtn {
     font-size: 2rem;
     top: 12px;
-    right: 12px;
+    right: 2rem;
   }
 }

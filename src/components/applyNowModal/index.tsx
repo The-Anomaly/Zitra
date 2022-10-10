@@ -1,3 +1,4 @@
+import { MenuClose } from "assets";
 import { Button } from "components";
 import * as React from "react";
 import styles from "./styles.module.css";
@@ -37,7 +38,11 @@ const ApplyNowUI: React.FC<ApplyProps> = ({ show, closeModal, submit }) => {
   return (
     <aside className={styles.dialog} role={"dialog"}>
       <div ref={modalBody} className={styles.body}>
-        <button onClick={closeModal} className={styles.closeBtn}>&times;</button>
+        <MenuClose
+          onClick={closeModal}
+          className={styles.closeBtn}
+          role="button"
+        />
         <p className={styles.tag}>Lets get you started</p>
         <h1 className={styles.ttl}>PROVIDE US WITH YOUR DETAILS</h1>
         <p className={styles.txt}>... we will get to you in a snap!</p>

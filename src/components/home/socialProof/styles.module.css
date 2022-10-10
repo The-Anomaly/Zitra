@@ -24,7 +24,7 @@
 }
 .logoWrap img,
 .logoWrap svg {
-  margin-right: 2.3rem;
+  margin-right: 3.5rem;
 }
 .logo1 {
   width: 94px;
@@ -58,7 +58,9 @@
   width: 80px;
   min-width: 80px;
 }
-
+.slider {
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .zigzag {
     display: none;
@@ -66,6 +68,49 @@
   .logoWrap img,
   .logoWrap svg {
     margin-right: 2rem;
+  }
+  .logoWrap {
+    display: none;
+  }
+  .logo6 {
+    width: 120px;
+    min-width: 120px
+  }
+  .logo7, .logo4{
+    width: 100px;
+    min-width: 100px;
+  }
+  .slider * {
+    transition: 0.3s;
+  }
+  .slider {
+    display: block;
+    background: transparent;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slideTrack {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: 1110px;
+    align-items: center;
+  }
+  .slide {
+    width: fit-content;
+    padding-right: 3rem;
+  }
+  .slide svg,
+  .slide img {
+    margin: auto;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1110px);
+    }
   }
 }
 @media screen and (max-width: 600px) {

@@ -38,6 +38,7 @@
   top: -4rem;
   right: 0;
   width: 46%;
+  max-width: 700px;
 }
 .txt2 {
   font-size: 30px;
@@ -54,7 +55,7 @@
 .mobileZigzag {
   display: none;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1730px) {
   .heroContainer {
     position: relative;
   }

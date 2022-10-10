@@ -193,6 +193,7 @@
   background: transparent;
   height: 48px;
   padding-left: 1rem;
+  border-radius: 8px;
 }
 .inputWrap textarea {
   width: 100%;
@@ -202,6 +203,7 @@
   resize: none;
   padding-left: 1rem;
   padding-top: 12px;
+  border-radius: 8px;
 }
 .halfWidth {
   width: 47%;

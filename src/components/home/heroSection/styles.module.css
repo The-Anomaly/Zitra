@@ -41,6 +41,7 @@
   top: -1rem;
   right: 0;
   width: 46%;
+  max-width: 700px;
 }
 .txt2 {
   color: var(--primary-dark);
@@ -62,7 +63,7 @@
   font-size: 13px;
   max-width: 500px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1730px) {
   .heroContainer {
     position: relative;
   }
@@ -87,7 +88,7 @@
     max-width: 500px;
   }
   .textSec {
-   width: 100%;
+    width: 100%;
   }
   .img {
     width: 100%;
@@ -130,7 +131,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    background-position: bottom
+    background-position: bottom;
   }
   .textSec2 {
     margin-top: -4rem;
