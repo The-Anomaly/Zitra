@@ -12,10 +12,11 @@ const Products = ({ apply }) => {
             <h2 className={styles.ttl}>Zitra Raiz</h2>
             <p className={styles.txt}>
               We offer quick payday emergency loans without collateral. Zitra
-              Raiz is the most convenient and cheapest loan with low-interest
-              rate, exceptional customer services, quick turnaround time, and we
-              guarantee you peace of mind. No HIDDEN charges!
-              <br /> Raiz your account and surprise your emergencies.
+              Raiz is the most convenient with low-interest rate, exceptional
+              customer services, quick turnaround time, and we guarantee you
+              peace of mind. No HIDDEN charges!
+              <br />
+              Raiz your account and surprise your emergencies.
             </p>
             <div className={styles.pointList}>
               <div className={styles.point}>
@@ -80,11 +81,11 @@ const Products = ({ apply }) => {
               <div className={styles.point}>
                 <p className={styles.pointTtl}>Easy documentation</p>
               </div>
-              <div className={styles.point}>
+              {/* <div className={styles.point}>
                 <p className={styles.pointTtl}>
                   No business registration required
                 </p>
-              </div>
+              </div> */}
               <div className={styles.point}>
                 <p className={styles.pointTtl}>Flexible repayment structure</p>
               </div>

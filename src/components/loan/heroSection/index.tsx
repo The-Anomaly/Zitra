@@ -12,21 +12,22 @@ const Hero = () => {
               A better way to{" "}
               <span>
                 financial <ZigZag className={styles.zigzag} />{" "}
-                <MobileZigzag className={`${styles.zigzag} ${styles.mobileZigzag}`} />
+                <MobileZigzag
+                  className={`${styles.zigzag} ${styles.mobileZigzag}`}
+                />
               </span>{" "}
               freedom
             </h1>
             <p className={styles.txt}>
               Apply for a loan today to help with your small business, a
               renovation project at home, a car purchase, rent, school fees,
-              medical expenses, etc.
+              medical expenses.
             </p>
             <img className={styles.img} src={loanHeroImg} alt="" />
             <p className={styles.txt2}>
               We offer few loan options <ArrowDown />{" "}
             </p>
           </div>
-       
         </div>
       </section>
     </>

@@ -1,4 +1,9 @@
-import { ArrowDown, investmentsHeroImg, MobileWideZigzag, WideZigzag } from "assets";
+import {
+  ArrowDown,
+  investmentsHeroImg,
+  MobileWideZigzag,
+  WideZigzag,
+} from "assets";
 import * as React from "react";
 import styles from "./styles.module.css";
 
@@ -13,12 +18,14 @@ const Hero = () => {
               <span>
                 extra money
                 <WideZigzag className={styles.zigzag} />
-                <MobileWideZigzag className={`${styles.zigzag} ${styles.mobileZigzag}`} />
+                <MobileWideZigzag
+                  className={`${styles.zigzag} ${styles.mobileZigzag}`}
+                />
               </span>
             </h1>
             <p className={styles.txt}>
               We offer attractive returns on your investments. Let's help you
-              kickstart your journey towards the financial Independence
+              kickstart your journey towards financial Independence
             </p>
             <img className={styles.img} src={investmentsHeroImg} alt="" />
             <p className={styles.txt2}>

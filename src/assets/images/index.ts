@@ -34,6 +34,10 @@ import teamMemberImg4 from "./teamMemberImg4.png";
 import teamMemberImg5 from "./teamMemberImg5.png";
 import teamMemberImg6 from "./teamMemberImg6.png";
 import teamMemberImg7 from "./teamMemberImg7.png";
+import teamMemberImg8 from "./teamMemberImg8.png";
+import teamMemberImg9 from "./teamMemberImg9.png";
+import teamMemberImg10 from "./teamMemberImg10.png";
+import teamMemberImg11 from "./teamMemberImg11.png";
 
 export {
   logo,
@@ -72,4 +76,8 @@ export {
   teamMemberImg5,
   teamMemberImg6,
   teamMemberImg7,
+  teamMemberImg8,
+  teamMemberImg9,
+  teamMemberImg10,
+  teamMemberImg11,
 };

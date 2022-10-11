@@ -18,7 +18,7 @@ const InvestmentOptions = () => {
       id: "primero",
       title: "Zitra Primero",
       text1: "Save money today – Live better tomorrow",
-      text2: `By regularly funding your account on a daily, weekly, monthly, or quarterly basis, you can crush your financial goals. Saving for rainy days is only part of the picture - it's about building your financial confidence. Your little steps will be rewarded and we'll guide you along the way. `,
+      text2: `Funding your account on a daily, weekly, monthly, or quarterly basis, you can crush your financial goals. Saving for rainy days is only part of the picture - it's about building your financial confidence. Your little steps will be rewarded and we'll guide you along the way.`,
       image: investmentOptionImg2,
     },
   ];

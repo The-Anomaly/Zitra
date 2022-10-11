@@ -35,7 +35,7 @@ const Footer = () => {
                 <Link to={Routes.home}>Home</Link>
               </li>
               <li>
-                <Link to={Routes.assetManagement}>Asset managements</Link>
+                <Link to={Routes.assetManagement}>Asset management</Link>
               </li>
               <li>
                 <Link to={Routes.about}>About Us</Link>
@@ -85,13 +85,13 @@ const Footer = () => {
               <li>Address D59, Landbridge Avenue Oniru, Lekki Lagos.</li>
               <p className={`${styles.ttl} ${styles.socialsTtl}`}>Socials</p>
               <div className={styles.socials}>
-                <a target={"_blank"} rel="noreferrer">
+                <a href="https://www.instagram.com/zitrainvestments/" target={"_blank"} rel="noreferrer">
                   <img src={instagram} alt="" />
                 </a>
-                <a target={"_blank"} rel="noreferrer">
+                <a href="https://twitter.com/zitrainvestment?s=11&t=EljUfIs4lTDFZcbYOdhdLA" target={"_blank"} rel="noreferrer">
                   <Twitter />
                 </a>
-                <a target={"_blank"} rel="noreferrer">
+                <a href="https://www.facebook.com/zitrainvestments" target={"_blank"} rel="noreferrer">
                   <Facebook />
                 </a>
               </div>

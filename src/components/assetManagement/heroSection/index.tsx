@@ -22,7 +22,7 @@ const Hero = () => {
               We offer a wide range of investment products and services across
               asset classes and investment styles. These include equities, money
               market and fixed income portfolios in local and global markets,
-              collective investment schemes, and other investment vehicles
+              collective investment schemes, and other investment vehicles.
             </p>
             <img className={styles.img} src={assetsHeroImg} alt="" />
             <p className={styles.txt2}>

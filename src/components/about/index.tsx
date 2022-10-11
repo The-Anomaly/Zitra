@@ -1,12 +1,16 @@
 import {
   landingSecurityImg,
   teamMemberImg1,
+  teamMemberImg10,
+  teamMemberImg11,
   teamMemberImg2,
   teamMemberImg3,
   teamMemberImg4,
   teamMemberImg5,
   teamMemberImg6,
   teamMemberImg7,
+  teamMemberImg8,
+  teamMemberImg9,
 } from "assets";
 import { Button } from "components/general";
 import * as React from "react";
@@ -37,6 +41,24 @@ const TeamMember: React.FC<MemberProps> = ({
 
 const AboutUI = () => {
   const members: MemberProps[] = [
+    {
+      image: teamMemberImg9,
+      name: "Tunde Obadero",
+      role: "Chief Executive Officer",
+      description: `Tunde has over 18 years experience in Strategy, Operations and Risk Management. Tunde has previously held roles as: Chief Executive Officer, CS Advance; Chief Commercial Officer, Pledge Finance; Head of Operations, Page Financials; Head of Operations, Skye Bank Plc. Tunde has an MBA from Lagos Business School and has had a senior management course at INSEAD.`,
+    },
+    {
+      image: teamMemberImg10,
+      name: "Femi Okuyelu",
+      role: "Director of Strategic Partnerships and Business Development",
+      description: `Femi Holds a BSc and an MBA from the university of Lagos. Femi has 15 years experience in Fintech, Business development, marketing and Strategic partnership. Femi has previously held roles as: Country Manager, Ferratum NG; Commercial Advisor, Embassy of Finland in Nigeria; Senior Market Analyst, Business Finland; Business Development Lead, Skye Bank Plc.`,
+    },
+    {
+      image: teamMemberImg11,
+      name: "Olaotan  Olumuyiwa",
+      role: "Chief Information Officer",
+      description: `He brings to play at Zitra his analytic and problem-solving skills aimed at developing, implementing, and improving relatable IT solutions that support business goals. He is an SAP Solution Architect with over 15 years of experience in Information Technology and eBusiness in the Nigerian Banking Sector. Olaotan Olamuyiwa is currently a Director and the Chief Information Officer at Zitra Investments. He holds a BSc in Computer Science (Technology) from Babcock University, Nigeria and a Masters Degree in Electronic Business Management from the University of Warwick, United Kingdom.`,
+    },
     {
       image: teamMemberImg1,
       name: "Obiora Onyekwelu",
@@ -86,6 +108,13 @@ const AboutUI = () => {
       description:
         "Nkechi has over 6 years work experience in corporate services and customer experience, she has held several leadership positions in Service management in Page Financials.",
     },
+    {
+      image: teamMemberImg8,
+      name: "Obra Felix",
+      role: "Head Marketing, Strategy and Communications",
+      description: `Obra holds a B.Sc in Microbiology from Madonna University, Anambra; and an MBA, Business Administration from Lagos Business School.
+      She has 4+ years of combined work experience in relationship management, business development, Marketing, budget management, and business management. Obra has held previous positions such as Sales Manager at Godrej Nigeria, General Manager at Amytorix Company Limited.`,
+    },
   ];
 
   return (
@@ -96,13 +125,13 @@ const AboutUI = () => {
           <h1 className={styles.ttl1}>About Us</h1>
           <p className={styles.txt1}>
             At Zitra, we provide our clients with premium value-add and build
-            trusting relationships to meet their financial and business needs.{" "}
+            trusting relationships to meet their financial and business needs.
           </p>
           <p className={styles.txt1}>
             We offer a wide range of easily accessible financial solutions,
             including loans, to bridge the funding gap for individuals and
-            businesses alike. We also provide investment solutions that will
-            help our clients grow their wealth and meet their financial goals.
+            businesses. We also provide investment solutions that will help our
+            clients grow their wealth and meet their financial goals.
           </p>
         </div>
 
@@ -136,23 +165,23 @@ const AboutUI = () => {
           <ul className={styles.driveList}>
             <li>
               Dependability (Dependable service): We pride ourselves on being
-              your dependable financial institution
+              your dependable financial institution.
             </li>
             <li>
               Social responsibility: One of our key focuses is to be socially
-              responsible and give back to our community
+              responsible and give back to our community.
             </li>
             <li>
               Client-focused: Customer satisfaction is at the heart of our
-              service delivery.{" "}
+              service delivery.
             </li>
             <li>
               Quality service delivery: We continually go above and beyond in
-              delivering impeccable services
+              delivering impeccable services.
             </li>
             <li>
               Mutual Respect: We want to ensure a mutually respectful
-              relationship with our clients
+              relationship with our clients.
             </li>
             <li>
               Teamwork: We work as a team to deliver value to clients and
@@ -170,9 +199,9 @@ const AboutUI = () => {
         <p className={styles.tag}>We’re hiring!</p>
         <h4 className={styles.teamTtl}>Meet our team</h4>
         <p className={styles.teamTxt}>
-          Our leadership team comprises young and vibrant professionals, with
+          Our leadership team comprises of young and vibrant professionals, with
           notable years of experience in financial advisory, consumer lending,
-          as well as information and technology.{" "}
+          as well as information and technology.
         </p>
         <div className={styles.memberList}>
           {members.map((item, index) => (

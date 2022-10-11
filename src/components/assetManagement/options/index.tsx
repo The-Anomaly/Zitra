@@ -35,7 +35,7 @@ const AssetOptions = () => {
     },
     {
       title: "Financial and Investment Advisory",
-      text2: `Zitra provides advisory services to her clients as relates to their investments, retirements and business.`,
+      text2: `Zitra provides advisory services to her clients as it relates to their investments, retirements and businesses.`,
       image: assetsOptionImg5,
     },
     {

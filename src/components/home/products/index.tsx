@@ -65,7 +65,7 @@ const Products = () => {
           We understand that business owners encounter problems trying to access
           finance to grow their businesses. Our business loan model is designed
           to meet the needs of business owners to help them grow and expand
-          their business even if it is not registered.
+          their business.
         </>
       ),
       link: `${Routes.loans}#sharpaly`,
