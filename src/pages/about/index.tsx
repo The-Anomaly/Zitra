@@ -26,8 +26,8 @@ const About = () => {
               },
               To: [
                 {
-                  Email: "favouradekogbe@gmail.com",
-                  Name: "Favour",
+                  Email: "zenna@zitrainvestments.com",
+                  Name: "Zenna",
                 },
               ],
               Subject: "New Contact Submission from zitrainvestments.com",

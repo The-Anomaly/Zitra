@@ -31,8 +31,8 @@ const ApplyNow: React.FC<ApplyProps> = ({ show, closeModal }) => {
               },
               To: [
                 {
-                  Email: "favouradekogbe@gmail.com",
-                  Name: "Favour",
+                  Email: "zenna@zitrainvestments.com",
+                  Name: "Zenna",
                 },
               ],
               Subject: "New Application Submission from zitrainvestments.com",
