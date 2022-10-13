@@ -92,9 +92,13 @@
   padding-right: 1rem;
   margin-top: 1.5rem;
   padding-top: 13px;
-  padding-bottom: 13px
+  padding-bottom: 13px;
 }
-
+.errorMessage {
+  color: red;
+  font-size: 11px;
+  margin-top: 8px;
+}
 @media screen and (max-width: 650px) {
   .body {
     padding: 2rem;

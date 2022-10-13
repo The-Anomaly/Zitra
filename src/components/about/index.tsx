@@ -15,6 +15,9 @@ import {
 import { Button } from "components/general";
 import * as React from "react";
 import styles from "./styles.module.css";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm, SubmitHandler } from "react-hook-form";
+import * as yup from "yup";
 
 interface MemberProps {
   image: string;
@@ -39,7 +42,43 @@ const TeamMember: React.FC<MemberProps> = ({
   );
 };
 
-const AboutUI = () => {
+interface ContactData {
+  firstName: string;
+  lastName: string;
+  message: string;
+  email: string;
+}
+
+const initialValues: ContactData = {
+  firstName: "",
+  lastName: "",
+  message: "",
+  email: "",
+};
+
+const contactSchema = yup
+  .object({
+    message: yup.string().required("Required"),
+    firstName: yup.string().required("Required"),
+    lastName: yup.string().required("Required"),
+    email: yup.string().email("Enter a valid email").required("Required"),
+  })
+  .required();
+
+interface AboutProps {
+  submit: (data: ContactData) => void;
+  clearForm: boolean;
+}
+const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactData>({
+    resolver: yupResolver(contactSchema),
+    defaultValues: initialValues,
+  });
   const members: MemberProps[] = [
     {
       image: teamMemberImg9,
@@ -116,6 +155,14 @@ const AboutUI = () => {
       She has 4+ years of combined work experience in relationship management, business development, Marketing, budget management, and business management. Obra has held previous positions such as Sales Manager at Godrej Nigeria, General Manager at Amytorix Company Limited.`,
     },
   ];
+
+  const onSubmit: SubmitHandler<ContactData> = (data) => {
+    submit(data);
+  };
+
+  React.useEffect(() => {
+    reset();
+  }, [clearForm]);
 
   return (
     <>
@@ -218,21 +265,63 @@ const AboutUI = () => {
         <form className={styles.contactForm}>
           <div className={`${styles.inputWrap} ${styles.halfWidth}`}>
             <label>First name</label>
-            <input type={"text"} />
+            <input
+              type={"text"}
+              {...register("firstName", {
+                required: true,
+              })}
+            />
+            {errors.firstName?.message ? (
+              <p className={styles.errorMessage}>{errors.firstName?.message}</p>
+            ) : (
+              ""
+            )}
           </div>
           <div className={`${styles.inputWrap} ${styles.halfWidth}`}>
             <label>Last name</label>
-            <input type={"text"} />
+            <input
+              type={"text"}
+              {...register("lastName", {
+                required: true,
+              })}
+            />
+            {errors.lastName?.message ? (
+              <p className={styles.errorMessage}>{errors.lastName?.message}</p>
+            ) : (
+              ""
+            )}
           </div>
           <div className={styles.inputWrap}>
             <label>Email Address</label>
-            <input type={"text"} />
+            <input
+              type={"email"}
+              {...register("email", {
+                required: true,
+              })}
+            />
+            {errors.email?.message ? (
+              <p className={styles.errorMessage}>{errors.email?.message}</p>
+            ) : (
+              ""
+            )}
           </div>
           <div className={styles.inputWrap}>
             <label>Message</label>
-            <textarea />
+            <textarea
+              {...register("message", {
+                required: true,
+              })}
+            />
+            {errors.message?.message ? (
+              <p className={styles.errorMessage}>{errors.message?.message}</p>
+            ) : (
+              ""
+            )}
           </div>
-          <Button className={styles.contactBtn} onClick={() => {}}>
+          <Button
+            className={styles.contactBtn}
+            onClick={handleSubmit(onSubmit)}
+          >
             Send Message
           </Button>
         </form>

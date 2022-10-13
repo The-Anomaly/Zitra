@@ -1,0 +1,2 @@
+export const MAILJET_API_KEY = process.env.REACT_APP_MAILJET_API_KEY;
+export const MAILJET_SECRET_KEY = process.env.REACT_APP_MAILJET_SECRET_KEY;
