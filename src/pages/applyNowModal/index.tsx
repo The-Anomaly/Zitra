@@ -36,7 +36,7 @@ const ApplyNow: React.FC<ApplyProps> = ({ show, closeModal }) => {
                 },
               ],
               Subject: "New Application Submission from zitrainvestments.com",
-              TextPart: "My first Mailjet email",
+              // TextPart: "My first Mailjet email",
               HTMLPart: `<h3>Hello Zitra Admin,</h3>
             <p style="font-size:14px">A new application request has been submitted on your website. The details are below:</p>
             <ul style="font-size:14px">
@@ -68,7 +68,6 @@ const ApplyNow: React.FC<ApplyProps> = ({ show, closeModal }) => {
             title: "Great",
             text: res.data.message,
           });
-          console.log(res);
         }
       })
       .catch((err) => {
