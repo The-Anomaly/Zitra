@@ -17,8 +17,12 @@ import { ReactComponent as WideZigzag } from "./wideZigzag.svg";
 import { ReactComponent as MobileZigzag } from "./mobileZigzag.svg";
 import { ReactComponent as MobileWideZigzag } from "./mobileWideZigzag.svg";
 import { ReactComponent as MenuClose } from "./menuClose.svg";
+import { ReactComponent as Youtube } from "./youtube.svg";
+import { ReactComponent as LinkedIn } from "./linkedIn.svg";
 
 export {
+  Youtube,
+  LinkedIn,
   ShortCurve,
   LongCurve,
   CurvedArrow,

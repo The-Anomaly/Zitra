@@ -4,8 +4,11 @@ import {
   FooterVec2,
   FooterVec3,
   instagram,
+  LinkedIn,
   LogoWhite,
+  secNigeria,
   Twitter,
+  Youtube,
 } from "assets";
 import * as React from "react";
 import { Link } from "react-router-dom";
@@ -82,20 +85,50 @@ const Footer = () => {
                   info@zitrainvestments.com
                 </a>
               </li>
-              <li>Address D59, Landbridge Avenue Oniru, Lekki Lagos.</li>
+              <li>Address D59, Landbridge Avenue Victoria Island, Lagos.</li>
               <p className={`${styles.ttl} ${styles.socialsTtl}`}>Socials</p>
               <div className={styles.socials}>
-                <a href="https://www.instagram.com/zitrainvestments/" target={"_blank"} rel="noreferrer">
+                <a
+                  href="https://www.instagram.com/zitrainvestments/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <img src={instagram} alt="" />
                 </a>
-                <a href="https://twitter.com/zitrainvestment?s=11&t=EljUfIs4lTDFZcbYOdhdLA" target={"_blank"} rel="noreferrer">
+                <a
+                  href="https://twitter.com/zitrainvestment?s=11&t=EljUfIs4lTDFZcbYOdhdLA"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <Twitter />
                 </a>
-                <a href="https://www.facebook.com/zitrainvestments" target={"_blank"} rel="noreferrer">
+                <a
+                  href="https://www.facebook.com/zitrainvestments"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <Facebook />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UC5iIoEh-7KndOmmd-uzWpAw"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <Youtube />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/zitra-investments/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <LinkedIn />
                 </a>
               </div>
             </ul>
+          </div>
+          <div className={styles.registeredBy}>
+            <p className={styles.ttl2}>Zitra Investments is Licensed by:</p>
+            <img src={secNigeria} />
           </div>
           <div>
             <p className={styles.ttl2}>Join our newsletter</p>
@@ -103,6 +136,13 @@ const Footer = () => {
               <input placeholder="enter your email address" />
               <button>Sign me up</button>
             </div>
+          </div>
+          <div className={styles.copyright}>
+            <p>© 2022 Zitra Investments. All rights reserved. </p>
+            <p>
+              A COMPANY OF STRONGHOLD INVESTMENT LIMITED (RC 269915), Registered
+              Fund Manager by the Securities and Exchange Commission (SEC).
+            </p>
           </div>
         </div>
       </footer>

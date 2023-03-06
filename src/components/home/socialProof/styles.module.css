@@ -24,7 +24,7 @@
 }
 .logoWrap img,
 .logoWrap svg {
-  margin-right: 3.5rem;
+  margin-right: 2.5rem;
 }
 .logo1 {
   width: 94px;
@@ -39,8 +39,8 @@
   min-width: 58px;
 }
 .logo4 {
-  width: 128px;
-  min-width: 128px;
+  width: 110px;
+  min-width: 110px;
 }
 .logo5 {
   width: 80px;
@@ -57,6 +57,10 @@
 .logo8 {
   width: 80px;
   min-width: 80px;
+}
+.logo9 {
+  width: 90px;
+  min-width: 90px;
 }
 .slider {
   display: none;
@@ -93,7 +97,7 @@
   .slideTrack {
     animation: scroll 30s linear infinite;
     display: flex;
-    width: 1110px;
+    width: 1230px;
     align-items: center;
   }
   .slide {
@@ -109,7 +113,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-1110px);
+      transform: translateX(-1230px);
     }
   }
 }

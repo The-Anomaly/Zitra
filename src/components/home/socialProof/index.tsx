@@ -8,6 +8,7 @@ import {
   SuntrustLogo,
   youverifyLogo,
   SmallZigzag,
+  remitaLogo,
 } from "assets";
 import * as React from "react";
 import styles from "./styles.module.css";
@@ -23,6 +24,7 @@ const SocialProof = () => {
         <img className={styles.logo2} src={providusLogo} alt="" />
         <SuntrustLogo className={styles.logo3} />
         <img className={styles.logo4} src={appzoneLogo} alt="" />
+        <img className={styles.logo9} src={remitaLogo} alt="" />
         <img className={styles.logo5} src={youverifyLogo} alt="" />
         <img className={styles.logo6} src={primepayLogo} alt="" />
         <img className={styles.logo7} src={onepipeLogo} alt="" />
@@ -41,6 +43,9 @@ const SocialProof = () => {
           </div>
           <div className={styles.slide}>
             <img className={styles.logo4} src={appzoneLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo9} src={remitaLogo} alt="" />
           </div>
           <div className={styles.slide}>
             <img className={styles.logo5} src={youverifyLogo} alt="" />
@@ -65,6 +70,9 @@ const SocialProof = () => {
           </div>
           <div className={styles.slide}>
             <img className={styles.logo4} src={appzoneLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo9} src={remitaLogo} alt="" />
           </div>
           <div className={styles.slide}>
             <img className={styles.logo5} src={youverifyLogo} alt="" />
