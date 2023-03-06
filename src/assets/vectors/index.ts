@@ -19,8 +19,12 @@ import { ReactComponent as MobileWideZigzag } from "./mobileWideZigzag.svg";
 import { ReactComponent as MenuClose } from "./menuClose.svg";
 import { ReactComponent as Youtube } from "./youtube.svg";
 import { ReactComponent as LinkedIn } from "./linkedIn.svg";
+import { ReactComponent as MinusIcon } from "./minusIcon.svg";
+import { ReactComponent as PlusIcon } from "./plusIcon.svg";
 
 export {
+  MinusIcon,
+  PlusIcon,
   Youtube,
   LinkedIn,
   ShortCurve,

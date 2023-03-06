@@ -7,3 +7,4 @@ export * from "./about";
 export * from "./loanForm";
 export * from "./toastModal";
 export * from "./investmentForm";
+export * from "./faq";

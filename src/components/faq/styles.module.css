@@ -1,0 +1,162 @@
+.introSec {
+  text-align: center;
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+}
+.tag {
+  color: var(--primary-green);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+.ttl1 {
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+  font-size: 42px;
+}
+.txt1 {
+  line-height: 2;
+  color: var(--text-color-002);
+  font-family: "Inter";
+  margin-bottom: 1rem;
+}
+
+.faqContainer {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgb(17 17 17 / 4%);
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+.faqCtrl {
+  padding: 2rem 0;
+}
+.faqCtrl span {
+  color: var(--text-color-002);
+  font-size: 13px;
+  padding: 12px;
+  margin-right: 12px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+}
+span.activeFaqView {
+  color: var(--primary-green);
+  background: #ebffeb;
+}
+/* FAQ Item */
+.faqItem {
+  border-top: 1px solid #eaecf0;
+}
+.faqBtn {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0;
+  background: transparent;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+.faqBtn span {
+  width: 80%;
+  line-height: 1.7;
+}
+.faqBtn svg {
+  width: 36px;
+}
+.faqBody {
+  padding: 0;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 200;
+  width: 87%;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-out;
+  color: var(--text-color-002);
+}
+.activeItem .faqBody {
+  height: auto;
+}
+.inactiveItem .faqBody {
+  animation-name: hideFaq;
+}
+.faqBody div {
+  margin-bottom: 1rem;
+}
+
+/* Select */
+.faqCtrlMobile {
+  display: none;
+}
+.select [class*="formSelect__control"] {
+  min-height: unset;
+  width: 100%;
+  border: 1px solid #c1c7d0;
+  background: transparent;
+  height: 44px;
+  border-radius: 8px;
+}
+.select [class*="formSelect__control--is-focused"] {
+  border-color: #e5e5e5 !important;
+  box-shadow: none;
+}
+.select [class*="formSelect__input-container"] {
+  height: 44px;
+  margin: 0;
+}
+.select [class*="formSelect__value-container"] {
+  padding: 0 0 0 1rem;
+  font-weight: 500;
+}
+.select [class*="formSelect__placeholder"] {
+  color: #4e5d78;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.select [class*="formSelect__indicator-separator"] {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .introSec {
+    padding-top: 2rem;
+    text-align: left;
+  }
+  .tag {
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .ttl1 {
+    font-size: 30px;
+  }
+  .txt1 {
+    margin-bottom: 0;
+    font-family: "Euclid";
+  }
+  .faqWrapper {
+    padding: 0;
+  }
+  .faqContainer {
+    border-radius: 0;
+    box-shadow: unset;
+    padding: 2rem 1rem;
+  }
+  .faqCtrl {
+    display: none;
+  }
+  .faqCtrlMobile {
+    display: block;
+    padding: 1rem 0 3rem;
+  }
+  .faqBtn {
+    font-size: 14px;
+  }
+}

@@ -14,4 +14,5 @@ export const Routes = {
   investments: "/investments",
   assetManagement: "/asset-management",
   about: "/about",
+  faqs: "/faqs",
 };

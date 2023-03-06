@@ -6,7 +6,7 @@ import { Routes } from "router";
 import styles from "./styles.module.css";
 
 export interface NavbarProps {
-  active: "home" | "loans" | "investments" | "asset-management" | "about";
+  active: "home" | "loans" | "investments" | "asset-management" | "about" | "faqs";
   apply: () => void;
 }
 
@@ -60,6 +60,11 @@ const Navbar: React.FC<NavbarProps> = ({ active, apply }) => {
       text: "About us",
       state: "about",
       link: Routes.about,
+    },
+    {
+      text: "FAQs",
+      state: "faqs",
+      link: Routes.faqs,
     },
   ];
   return (

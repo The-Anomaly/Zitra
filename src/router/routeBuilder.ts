@@ -1,5 +1,5 @@
 import { Layout } from "components";
-import { About, AssetManagement, Home, Investments, Loan } from "pages";
+import { About, AssetManagement, FAQ, Home, Investments, Loan } from "pages";
 import { RouteProps } from "react-router-dom";
 import { Routes } from "./routes";
 
@@ -29,39 +29,47 @@ export const RouteBuilder: RouteBuilderItem[] = [
     Layout: Layout,
     Element: Home,
     props: {
-      active: "home"
-    }
+      active: "home",
+    },
   },
   {
     path: Routes.loans,
     Layout: Layout,
     Element: Loan,
     props: {
-      active: "loans"
-    }
+      active: "loans",
+    },
   },
   {
     path: Routes.investments,
     Layout: Layout,
     Element: Investments,
     props: {
-      active: "investments"
-    }
+      active: "investments",
+    },
   },
   {
     path: Routes.assetManagement,
     Layout: Layout,
     Element: AssetManagement,
     props: {
-      active: "asset-management"
-    }
+      active: "asset-management",
+    },
   },
   {
     path: Routes.about,
     Layout: Layout,
     Element: About,
     props: {
-      active: "about"
-    }
+      active: "about",
+    },
+  },
+  {
+    path: Routes.faqs,
+    Layout: Layout,
+    Element: FAQ,
+    props: {
+      active: "faqs",
+    },
   },
 ];
