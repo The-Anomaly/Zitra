@@ -2,11 +2,11 @@ import * as React from "react";
 import { Hero } from "./heroSection";
 import { AssetOptions } from "./options";
 
-const AssetManagementUI = () => {
+const AssetManagementUI = ({ apply }) => {
   return (
     <>
       <Hero />
-      <AssetOptions />
+      <AssetOptions apply={apply} />
     </>
   );
 };

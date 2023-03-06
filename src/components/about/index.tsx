@@ -82,14 +82,14 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
   const members: MemberProps[] = [
     {
       image: teamMemberImg9,
-      name: "Tunde Obadero",
+      name: "Tunde Obadero (MIOD)",
       role: "Chief Executive Officer",
       description: `Tunde has over 18 years experience in Strategy, Operations and Risk Management. Tunde has previously held roles as: Chief Executive Officer, CS Advance; Chief Commercial Officer, Pledge Finance; Head of Operations, Page Financials; Head of Operations, Skye Bank Plc. Tunde has an MBA from Lagos Business School and has had a senior management course at INSEAD.`,
     },
     {
       image: teamMemberImg10,
-      name: "Femi Okuyelu",
-      role: "Director of Strategic Partnerships and Business Development",
+      name: "Femi Okuyelu (MIOD)",
+      role: "Director, Business Development",
       description: `Femi Holds a BSc and an MBA from the university of Lagos. Femi has 15 years experience in Fintech, Business development, marketing and Strategic partnership. Femi has previously held roles as: Country Manager, Ferratum NG; Commercial Advisor, Embassy of Finland in Nigeria; Senior Market Analyst, Business Finland; Business Development Lead, Skye Bank Plc.`,
     },
     {
@@ -138,7 +138,7 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
       name: "Ugochukwu Okere",
       role: "Head of Funding",
       description:
-        "Ugochukwu has over 10 years of experience in the financial services industry having worked with several Fintech organizations and commercial Banks. Ugochukwu is graduate of mass communication from Ahmadu Bello University, He is also a certified Human Resources Manager.",
+        "Ugochukwu is a Relationship Management expert with over 10 years experience spanning various prestigious Fintech Organizations and Commercial Banks. He is people oriented and has a drive for excellent customer service, relationship management, fund and investment management. He is a bottom line conscious, revenue driven business manager with experience in retail and commercial sales, strategic partnerships and deposit mobilization. He is a certified HRM, has a Bsc in Mass Comm. and an MBA from ABU zaria  (in view).",
     },
     {
       image: teamMemberImg7,

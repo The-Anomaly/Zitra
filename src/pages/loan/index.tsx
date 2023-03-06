@@ -1,13 +1,13 @@
 import * as React from "react";
 import { LoanUI } from "components";
-import { ApplyNow } from "pages";
+import { LoanForm } from "pages";
 
 const Loan = () => {
   const [state, setState] = React.useState(false);
 
   return (
     <>
-      <ApplyNow show={state} closeModal={() => setState(false)} />
+      <LoanForm show={state} closeModal={() => setState(false)} />
       <LoanUI apply={() => setState(true)} />
     </>
   );

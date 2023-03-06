@@ -2,11 +2,11 @@ import * as React from "react";
 import { Hero } from "./heroSection";
 import { InvestmentOptions } from "./options";
 
-const InvestmentsUI = () => {
+const InvestmentsUI = ({ apply }) => {
   return (
     <>
       <Hero />
-      <InvestmentOptions />
+      <InvestmentOptions apply={apply} />
     </>
   );
 };

@@ -2,7 +2,7 @@ import { investmentOptionImg1, investmentOptionImg2 } from "assets";
 import { Option, OptionProps } from "components/general";
 import * as React from "react";
 
-const InvestmentOptions = () => {
+const InvestmentOptions = ({ apply }) => {
   const options: OptionProps[] = [
     {
       id: "pesado",
@@ -13,6 +13,7 @@ const InvestmentOptions = () => {
   financial freedom you have always wanted. Invest a minimum of 100k and
   earn high returns.`,
       image: investmentOptionImg1,
+      apply,
     },
     {
       id: "primero",
@@ -20,6 +21,7 @@ const InvestmentOptions = () => {
       text1: "Save money today – Live better tomorrow",
       text2: `Funding your account on a daily, weekly, monthly, or quarterly basis, you can crush your financial goals. Saving for rainy days is only part of the picture - it's about building your financial confidence. Your little steps will be rewarded and we'll guide you along the way.`,
       image: investmentOptionImg2,
+      apply,
     },
   ];
 
