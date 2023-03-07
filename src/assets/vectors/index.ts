@@ -21,8 +21,10 @@ import { ReactComponent as Youtube } from "./youtube.svg";
 import { ReactComponent as LinkedIn } from "./linkedIn.svg";
 import { ReactComponent as MinusIcon } from "./minusIcon.svg";
 import { ReactComponent as PlusIcon } from "./plusIcon.svg";
+import { ReactComponent as WhatsappIcon } from "./whatsappIcon.svg";
 
 export {
+  WhatsappIcon,
   MinusIcon,
   PlusIcon,
   Youtube,

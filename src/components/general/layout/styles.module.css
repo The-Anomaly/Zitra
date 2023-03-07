@@ -1,9 +1,33 @@
 .wrapper {
   padding-top: 123px;
 }
-
+.whatsapp {
+  display: block;
+  width: fit-content;
+  color: var(--text-color-002);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  z-index: 1;
+}
+.whatsapp svg {
+  width: 64px;
+}
 @media screen and (max-width: 800px) {
   .wrapper {
     padding-top: 70px;
+  }
+  .whatsapp {
+    right: 10px;
+    bottom: 1rem;
+  }
+  .whatsapp svg {
+    width: 48px;
+  }
+  .whatsapp p {
+    display: none;
   }
 }

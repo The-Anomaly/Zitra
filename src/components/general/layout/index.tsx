@@ -8,6 +8,7 @@ import { Routes } from "router";
 import axios from "axios";
 import { Preloader, Toast } from "components";
 import { SENDINBLUE_KEY, SENDINBLUE_LIST_ID } from "config";
+import { WhatsappIcon } from "assets";
 
 interface LayoutProps extends NavbarProps {
   children: any;
@@ -88,6 +89,14 @@ const Layout: React.FC<LayoutProps> = ({ children, active }) => {
       />
       <Navbar active={active} apply={apply} />
       <main className={styles.wrapper}>{children}</main>
+      <a
+        className={styles.whatsapp}
+        href="https://wa.me/+2347047751368"
+        target="blank"
+      >
+        <WhatsappIcon />
+        <p>Chat with us</p>
+      </a>
       <Footer clear={clear} submit={newsletter} />
     </>
   );
