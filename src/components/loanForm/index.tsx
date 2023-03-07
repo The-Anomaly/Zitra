@@ -327,7 +327,7 @@ const LoanFormUI: React.FC<ApplyProps> = ({
               ""
             )}
           </div>
-          <div className={`${styles.inputWrap} ${styles.halfWidth}`}>
+          <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
             <label>BVN</label>
             <input
               type={"text"}
@@ -342,7 +342,7 @@ const LoanFormUI: React.FC<ApplyProps> = ({
             )}
           </div>
 
-          <div className={`${styles.inputWrap} ${styles.halfWidth}`}>
+          <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
             <label>Salary range</label>
             <Select
               onChange={(x: any) => setValue("salaryRange", x)}

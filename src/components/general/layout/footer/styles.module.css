@@ -94,6 +94,11 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
 }
 .copyright {
   grid-column-start: 1;

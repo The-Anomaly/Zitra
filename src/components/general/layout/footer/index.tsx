@@ -15,7 +15,18 @@ import { Link } from "react-router-dom";
 import { Routes } from "router";
 import styles from "./styles.module.css";
 
-const Footer = () => {
+interface FooterProps {
+  submit: (email: string) => void;
+  clear: boolean;
+}
+
+const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
+  const [email, setEmail] = React.useState("");
+
+  React.useEffect(() => {
+    setEmail("");
+  }, [clear]);
+
   return (
     <>
       <footer className={styles.footerBg}>
@@ -133,8 +144,14 @@ const Footer = () => {
           <div>
             <p className={styles.ttl2}>Join our newsletter</p>
             <div className={styles.inputWrap}>
-              <input placeholder="enter your email address" />
-              <button>Sign me up</button>
+              <input
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                placeholder="enter your email address"
+              />
+              <button disabled={email === ""} onClick={() => submit(email)}>
+                Sign me up
+              </button>
             </div>
           </div>
           <div className={styles.copyright}>
