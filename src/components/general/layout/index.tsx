@@ -46,7 +46,7 @@ const Layout: React.FC<LayoutProps> = ({ children, active }) => {
       },
       data: {
         email,
-        listIds: [SENDINBLUE_LIST_ID],
+        listIds: [Number(SENDINBLUE_LIST_ID)],
       },
     };
 
