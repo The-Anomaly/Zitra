@@ -2,7 +2,11 @@ import * as React from "react";
 import { Hero } from "./heroSection";
 import { Products } from "./products";
 
-const LoanUI = ({apply}) => {
+interface LoanProps {
+  apply: (to?: string) => void;
+}
+
+const LoanUI: React.FC<LoanProps> = ({ apply }) => {
   return (
     <>
       <Hero />

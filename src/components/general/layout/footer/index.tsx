@@ -72,7 +72,7 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                 <Link to={`${Routes.investments}#pesado`}>Zitra Pesado</Link>
               </li>
               <li>
-                <Link to={`${Routes.loans}#sharpaly`}>Zitra Sharpaly</Link>
+                <Link to={`${Routes.loans}#confam`}>Zitra Confam</Link>
               </li>
               <li>
                 <Link to={`${Routes.investments}#primero`}>Zitra Primero</Link>

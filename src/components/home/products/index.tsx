@@ -59,7 +59,7 @@ const Products = () => {
     {
       icon: earningsIcon,
       iconType: "pink",
-      title: "Zitra Sharpaly",
+      title: "Zitra Confam",
       text: (
         <>
           We understand that business owners encounter problems trying to access
@@ -68,7 +68,7 @@ const Products = () => {
           their business.
         </>
       ),
-      link: `${Routes.loans}#sharpaly`,
+      link: `${Routes.loans}#confam`,
     },
     {
       icon: investmentIcon,

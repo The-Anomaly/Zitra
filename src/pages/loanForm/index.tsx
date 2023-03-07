@@ -6,10 +6,11 @@ import * as React from "react";
 interface ApplyProps {
   show: boolean;
   closeModal: () => void;
+  to?: string;
 }
 
 // Email for
-const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
+const LoanForm: React.FC<ApplyProps> = ({ show, closeModal, to }) => {
   const [clear, setClear] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [toast, setToast] = React.useState({
@@ -32,8 +33,8 @@ const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
               },
               To: [
                 {
-                  Email: "LoansPersonallending@zitrainvestments.com",
-                  Name: "Loans and Personal Lendings",
+                  Email: to ?? "LoansPersonallending@zitrainvestments.com",
+                  Name: to ? "Zitra Confam" : "Loans and Personal Lendings",
                 },
               ],
               Subject: "New Loan Submission from zitrainvestments.com",

@@ -3,7 +3,11 @@ import { Button } from "components/general";
 import * as React from "react";
 import styles from "./styles.module.css";
 
-const Products = ({ apply }) => {
+interface ProductsProps {
+  apply: (to?: string) => void;
+}
+
+const Products: React.FC<ProductsProps> = ({ apply }) => {
   return (
     <>
       <section id="raiz" className={styles.productBg}>
@@ -56,14 +60,14 @@ const Products = ({ apply }) => {
           </div>
         </div>
       </section>
-      <section id="sharpaly" className={styles.productBg}>
+      <section id="confam" className={styles.productBg}>
         <div
           className={`container ${styles.productContainer} ${styles.reverse}`}
         >
           <div className={styles.txtSec}>
-            <h2 className={styles.ttl}>Zitra Sharpaly</h2>
+            <h2 className={styles.ttl}>Zitra Confam</h2>
             <p className={styles.txt}>
-              Zitra Shaparly gives businesses quick, easy and flexible access to
+              Zitra Confam gives businesses quick, easy and flexible access to
               business loans tailored to their business requirements. We
               understand how important it is to keep your business afloat, our
               rates are highly competitive, and we have a quick turnaround time.
@@ -90,7 +94,9 @@ const Products = ({ apply }) => {
                 <p className={styles.pointTtl}>Flexible repayment structure</p>
               </div>
             </div>
-            <Button onClick={apply}>Apply now</Button>
+            <Button onClick={() => apply("john.usang@zitrainvestments.com")}>
+              Apply now
+            </Button>
           </div>
           <div className={styles.imgSec}>
             <img className={styles.img} src={sharpalyImg} />

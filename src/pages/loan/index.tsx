@@ -4,11 +4,17 @@ import { LoanForm } from "pages";
 
 const Loan = () => {
   const [state, setState] = React.useState(false);
+  const [mailTo, setMailTo] = React.useState<string | undefined>(undefined);
 
   return (
     <>
-      <LoanForm show={state} closeModal={() => setState(false)} />
-      <LoanUI apply={() => setState(true)} />
+      <LoanForm to={mailTo} show={state} closeModal={() => setState(false)} />
+      <LoanUI
+        apply={(x) => {
+          setState(true);
+          x && setMailTo(x);
+        }}
+      />
     </>
   );
 };
