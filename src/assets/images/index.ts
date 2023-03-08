@@ -38,12 +38,12 @@ import teamMemberImg8 from "./teamMemberImg8.png";
 import teamMemberImg9 from "./teamMemberImg9.png";
 import teamMemberImg10 from "./teamMemberImg10.png";
 import teamMemberImg11 from "./teamMemberImg11.png";
-import secNigeria from "./secNigeria.png";
 import remitaLogo from "./remitaLogo.png";
+import krediLogo from "./krediLogo.png";
 
 export {
+  krediLogo,
   remitaLogo,
-  secNigeria,
   logo,
   instagram,
   landingHeroImg,

@@ -9,6 +9,7 @@ import {
   youverifyLogo,
   SmallZigzag,
   remitaLogo,
+  krediLogo,
 } from "assets";
 import * as React from "react";
 import styles from "./styles.module.css";
@@ -28,6 +29,7 @@ const SocialProof = () => {
         <img className={styles.logo5} src={youverifyLogo} alt="" />
         <img className={styles.logo6} src={primepayLogo} alt="" />
         <img className={styles.logo7} src={onepipeLogo} alt="" />
+        <img className={styles.logo10} src={krediLogo} alt="" />
         <img className={styles.logo8} src={bidellusLogo} alt="" />
       </div>
       <div className={styles.slider}>
@@ -57,6 +59,9 @@ const SocialProof = () => {
             <img className={styles.logo7} src={onepipeLogo} alt="" />
           </div>
           <div className={styles.slide}>
+            <img className={styles.logo10} src={krediLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
             <img className={styles.logo8} src={bidellusLogo} alt="" />
           </div>
           <div className={styles.slide}>
@@ -82,6 +87,9 @@ const SocialProof = () => {
           </div>
           <div className={styles.slide}>
             <img className={styles.logo7} src={onepipeLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo10} src={krediLogo} alt="" />
           </div>
           <div className={styles.slide}>
             <img className={styles.logo8} src={bidellusLogo} alt="" />

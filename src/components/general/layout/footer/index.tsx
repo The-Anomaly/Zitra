@@ -6,7 +6,6 @@ import {
   instagram,
   LinkedIn,
   LogoWhite,
-  secNigeria,
   Twitter,
   Youtube,
 } from "assets";
@@ -137,10 +136,6 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
               </div>
             </ul>
           </div>
-          {/* <div className={styles.registeredBy}>
-            <p className={styles.ttl2}>Zitra Investments is Licensed by:</p>
-            <img src={secNigeria} />
-          </div> */}
           <div>
             <p className={styles.ttl2}>Join our newsletter</p>
             <div className={styles.inputWrap}>

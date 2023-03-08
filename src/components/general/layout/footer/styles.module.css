@@ -111,9 +111,7 @@ button:disabled {
   font-size: 13px;
   position: relative;
 }
-.registeredBy {
-  display: none;
-}
+
 @media screen and (max-width: 800px) {
   .vec1,
   .vec2,
@@ -137,15 +135,7 @@ button:disabled {
     margin-top: 1.5rem;
   }
   .copyright p:last-of-type {
-    /* display: none; */
     margin-top: 10px;
     line-height: 1.5;
-  }
-  .registeredBy {
-    display: block;
-  }
-  .registeredBy img {
-    width: 160px;
-    margin-top: -6px;
   }
 }
