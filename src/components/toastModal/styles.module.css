@@ -12,7 +12,7 @@
 .body {
   background: var(--bg-color-004);
   width: 90%;
-  font-family: "Metropolis";
+  font-family: 'Euclid';
   padding: 1.2rem;
   border-radius: 8px;
   max-width: 380px;

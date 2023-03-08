@@ -330,7 +330,7 @@ const LoanFormUI: React.FC<ApplyProps> = ({
           <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
             <label>BVN</label>
             <input
-              type={"text"}
+              type={"number"}
               {...register("bvn", {
                 required: true,
               })}

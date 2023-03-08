@@ -137,7 +137,9 @@ button:disabled {
     margin-top: 1.5rem;
   }
   .copyright p:last-of-type {
-    display: none;
+    /* display: none; */
+    margin-top: 10px;
+    line-height: 1.5;
   }
   .registeredBy {
     display: block;

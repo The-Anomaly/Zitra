@@ -58,7 +58,7 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                 <Link to={`${Routes.about}#contact`}>Contact Us</Link>
               </li>
               <li>
-                <a>FAQs</a>
+                <Link to={Routes.faqs}>FAQs</Link>
               </li>
             </ul>
           </div>
@@ -137,14 +137,15 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
               </div>
             </ul>
           </div>
-          <div className={styles.registeredBy}>
+          {/* <div className={styles.registeredBy}>
             <p className={styles.ttl2}>Zitra Investments is Licensed by:</p>
             <img src={secNigeria} />
-          </div>
+          </div> */}
           <div>
             <p className={styles.ttl2}>Join our newsletter</p>
             <div className={styles.inputWrap}>
               <input
+                type={"email"}
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 placeholder="enter your email address"

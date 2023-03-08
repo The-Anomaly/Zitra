@@ -18,6 +18,14 @@ const Toast: React.FC<ToastProps> = ({
   title,
   text,
 }) => {
+  React.useEffect(() => {
+    if (show) {
+      setTimeout(() => {
+        closeModal();
+      }, 10000);
+    }
+  }, [show]);
+
   if (!show) return null;
 
   return (
