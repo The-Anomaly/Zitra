@@ -3,14 +3,15 @@ import { Hero } from "./heroSection";
 import { Products } from "./products";
 
 interface LoanProps {
-  apply: (to?: string) => void;
+  raiz: () => void;
+  confam: () => void;
 }
 
-const LoanUI: React.FC<LoanProps> = ({ apply }) => {
+const LoanUI: React.FC<LoanProps> = ({ raiz, confam }) => {
   return (
     <>
       <Hero />
-      <Products apply={apply} />
+      <Products raiz={raiz} confam={confam} />
     </>
   );
 };

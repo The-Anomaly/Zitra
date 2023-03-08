@@ -1,20 +1,16 @@
 import * as React from "react";
 import { LoanUI } from "components";
-import { LoanForm } from "pages";
+import { LoanForm, LoanFormConfam } from "pages";
 
 const Loan = () => {
-  const [state, setState] = React.useState(false);
-  const [mailTo, setMailTo] = React.useState<string | undefined>(undefined);
+  const [raiz, setRaiz] = React.useState(false);
+  const [confam, setConfam] = React.useState(false);
 
   return (
     <>
-      <LoanForm to={mailTo} show={state} closeModal={() => setState(false)} />
-      <LoanUI
-        apply={(x) => {
-          setState(true);
-          x && setMailTo(x);
-        }}
-      />
+      <LoanForm show={raiz} closeModal={() => setRaiz(false)} />
+      <LoanFormConfam show={confam} closeModal={() => setConfam(false)} />
+      <LoanUI raiz={() => setRaiz(true)} confam={() => setConfam(true)} />
     </>
   );
 };

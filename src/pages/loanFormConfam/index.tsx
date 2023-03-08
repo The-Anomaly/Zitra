@@ -1,5 +1,5 @@
 import axios from "axios";
-import { LoanFormUI, Preloader, Toast } from "components";
+import { LoanFormConfamUI, Preloader, Toast } from "components";
 import { MAILJET_API_KEY, MAILJET_SECRET_KEY } from "config";
 import * as React from "react";
 
@@ -9,7 +9,7 @@ interface ApplyProps {
 }
 
 // Email for
-const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
+const LoanFormConfam: React.FC<ApplyProps> = ({ show, closeModal }) => {
   const [clear, setClear] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [toast, setToast] = React.useState({
@@ -32,8 +32,8 @@ const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
               },
               To: [
                 {
-                  Email: "LoansPersonallending@zitrainvestments.com",
-                  Name: "Loans and Personal Lendings",
+                  Email: "john.usang@zitrainvestments.com",
+                  Name: "Zitra Confam",
                 },
               ],
               Subject: "New Loan Submission from zitrainvestments.com",
@@ -45,8 +45,8 @@ const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
             <li>Last name: <b>${data.lastName}</b></li>
             <li>Email address: <b>${data.email}</b></li>
             <li>Phone number: <b>${data.phone}</b></li>
-            <li>BVN: <b>${data.bvn}</b></li>
-            <li>Salary range: <b>${data.salaryRange.value}</b></li>
+            <li>BVN/NIN?LASSRA: <b>${data.bvn}</b></li>
+            <li>Type of business: <b>${data.businessType}</b></li>
             <li>Location: <b>${data.location.value}</b></li>
             </ul>
             Best regards.
@@ -92,7 +92,7 @@ const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
         {...toast}
         closeModal={() => setToast({ ...toast, show: false })}
       />
-      <LoanFormUI
+      <LoanFormConfamUI
         show={show}
         closeModal={closeModal}
         submit={(data) => sendEmail(data)}
@@ -102,4 +102,4 @@ const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
   );
 };
 
-export { LoanForm };
+export { LoanFormConfam };

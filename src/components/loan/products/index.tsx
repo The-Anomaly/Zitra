@@ -4,10 +4,11 @@ import * as React from "react";
 import styles from "./styles.module.css";
 
 interface ProductsProps {
-  apply: (to?: string) => void;
+  raiz: () => void;
+  confam: () => void;
 }
 
-const Products: React.FC<ProductsProps> = ({ apply }) => {
+const Products: React.FC<ProductsProps> = ({ raiz, confam }) => {
   return (
     <>
       <section id="raiz" className={styles.productBg}>
@@ -53,7 +54,7 @@ const Products: React.FC<ProductsProps> = ({ apply }) => {
                 </p>
               </div>
             </div>
-            <Button onClick={apply}>Apply now</Button>
+            <Button onClick={raiz}>Apply now</Button>
           </div>
           <div className={styles.imgSec}>
             <img className={styles.img} src={raizImg} />
@@ -94,9 +95,7 @@ const Products: React.FC<ProductsProps> = ({ apply }) => {
                 <p className={styles.pointTtl}>Flexible repayment structure</p>
               </div>
             </div>
-            <Button onClick={() => apply("john.usang@zitrainvestments.com")}>
-              Apply now
-            </Button>
+            <Button onClick={confam}>Apply now</Button>
           </div>
           <div className={styles.imgSec}>
             <img className={styles.img} src={sharpalyImg} />

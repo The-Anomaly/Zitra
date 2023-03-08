@@ -13,165 +13,86 @@ interface optionType {
   value: string;
 }
 
-const salaryRangeOptions: optionType[] = [
-  {
-    label: "80,000 - 150,000",
-    value: "80,000 - 150,000",
-  },
-  {
-    label: "150,000 - 500,000",
-    value: "150,000 - 500,000",
-  },
-  {
-    label: "550,000 and above",
-    value: "550,000 and above",
-  },
-];
-
 const locationOptions: optionType[] = [
   {
-    label: "Abia",
-    value: "Abia",
+    label: "Alimosho",
+    value: "Alimosho",
   },
   {
-    label: "Adamawa",
-    value: "Adamawa",
+    label: "Ajeromi-Ifelodun",
+    value: "Ajeromi-Ifelodun",
   },
   {
-    label: "Akwa Ibom",
-    value: "Akwa Ibom",
+    label: "Kosofe",
+    value: "Kosofe",
   },
   {
-    label: "Anambra",
-    value: "Anambra",
+    label: "Mushin",
+    value: "Mushin",
   },
   {
-    label: "Bauchi",
-    value: "Bauchi",
+    label: "Ojo",
+    value: "Ojo",
   },
   {
-    label: "Bayelsa",
-    value: "Bayelsa",
+    label: "Oshodi-Isolo",
+    value: "Oshodi-Isolo",
   },
   {
-    label: "Benue",
-    value: "Benue",
+    label: "Ikorodu",
+    value: "Ikorodu",
   },
   {
-    label: "Borno",
-    value: "Borno",
+    label: "Surulere",
+    value: "Surulere",
   },
   {
-    label: "Cross River",
-    value: "Cross River",
+    label: "Agege",
+    value: "Agege",
   },
   {
-    label: "Delta",
-    value: "Delta",
+    label: "Ifako-Ijaiye",
+    value: "Ifako-Ijaiye",
   },
   {
-    label: "Ebonyi",
-    value: "Ebonyi",
+    label: "Somolu",
+    value: "Somolu",
   },
   {
-    label: "Edo",
-    value: "Edo",
+    label: "Amuwo-Odofin",
+    value: "Amuwo-Odofin",
   },
   {
-    label: "Ekiti",
-    value: "Ekiti",
+    label: "Lagos Mainland",
+    value: "Lagos Mainland",
   },
   {
-    label: "Enugu",
-    value: "Enugu",
+    label: "Ikeja",
+    value: "Ikeja",
   },
   {
-    label: "Gombe",
-    value: "Gombe",
+    label: "Eti-Osa",
+    value: "Eti-Osa",
   },
   {
-    label: "Imo",
-    value: "Imo",
+    label: "Badagry",
+    value: "Badagry",
   },
   {
-    label: "Jigawa",
-    value: "Jigawa",
+    label: "Apapa",
+    value: "Apapa",
   },
   {
-    label: "Kaduna",
-    value: "Kaduna",
+    label: "Lagos Island",
+    value: "Lagos Island",
   },
   {
-    label: "Kano",
-    value: "Kano",
+    label: "Epe",
+    value: "Epe",
   },
   {
-    label: "Katsina",
-    value: "Katsina",
-  },
-  {
-    label: "Kebbi",
-    value: "Kebbi",
-  },
-  {
-    label: "Kogi",
-    value: "Kogi",
-  },
-  {
-    label: "Kwara",
-    value: "Kwara",
-  },
-  {
-    label: "Lagos",
-    value: "Lagos",
-  },
-  {
-    label: "Nasarawa",
-    value: "Nasarawa",
-  },
-  {
-    label: "Niger",
-    value: "Niger",
-  },
-  {
-    label: "Ogun",
-    value: "Ogun",
-  },
-  {
-    label: "Ondo",
-    value: "Ondo",
-  },
-  {
-    label: "Osun",
-    value: "Osun",
-  },
-  {
-    label: "Oyo",
-    value: "Oyo",
-  },
-  {
-    label: "Plateau",
-    value: "Plateau",
-  },
-  {
-    label: "Rivers",
-    value: "Rivers",
-  },
-  {
-    label: "Sokoto",
-    value: "Sokoto",
-  },
-  {
-    label: "Taraba",
-    value: "Taraba",
-  },
-  {
-    label: "Yobe",
-    value: "Yobe",
-  },
-  {
-    label: "Zamfara",
-    value: "Zamfara",
+    label: "Ibeju-Lekki",
+    value: "Ibeju-Lekki",
   },
 ];
 
@@ -181,7 +102,7 @@ interface ApplyData {
   phone: string;
   email: string;
   bvn: string;
-  salaryRange: optionType;
+  businessType: string;
   location: optionType;
 }
 
@@ -191,10 +112,7 @@ const initialValues: ApplyData = {
   phone: "",
   email: "",
   bvn: "",
-  salaryRange: {
-    label: "",
-    value: "",
-  },
+  businessType: "",
   location: {
     label: "",
     value: "",
@@ -217,7 +135,7 @@ const applySchema = yup
     lastName: yup.string().required("Required"),
     email: yup.string().email("Enter a valid email").required("Required"),
     bvn: yup.string().required("Required"),
-    salaryRange: optionTypeSchema,
+    businessType: yup.string().required("Required"),
     location: optionTypeSchema,
   })
   .required();
@@ -229,7 +147,7 @@ interface ApplyProps {
   clearForm: boolean;
 }
 
-const LoanFormUI: React.FC<ApplyProps> = ({
+const LoanFormConfamUI: React.FC<ApplyProps> = ({
   show,
   closeModal,
   submit,
@@ -257,7 +175,7 @@ const LoanFormUI: React.FC<ApplyProps> = ({
   }, [clearForm]);
 
   if (!show) return null;
-
+  
   return (
     <aside className={styles.dialog} role={"dialog"}>
       <div ref={modalBody} className={styles.body}>
@@ -326,10 +244,8 @@ const LoanFormUI: React.FC<ApplyProps> = ({
               ""
             )}
           </div>
-          <div
-            className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}
-          >
-            <label>BVN</label>
+          <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
+            <label>BVN/NIN/LASSRA</label>
             <input
               type={"number"}
               {...register("bvn", {
@@ -343,24 +259,16 @@ const LoanFormUI: React.FC<ApplyProps> = ({
             )}
           </div>
 
-          <div
-            className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}
-          >
-            <label>Salary range</label>
-            <Select
-              onChange={(x: any) => setValue("salaryRange", x)}
-              placeholder={"Select range"}
-              className={`${styles.select}`}
-              classNamePrefix="formSelect"
-              name={"salaryRange"}
-              options={salaryRangeOptions}
-              value={watch("salaryRange").value ? watch("salaryRange") : null}
+          <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
+            <label>Type of Business</label>
+            <input
+              type={"number"}
+              {...register("businessType", {
+                required: true,
+              })}
             />
-            {!watch("salaryRange").value &&
-            errors.salaryRange?.value?.message ? (
-              <p className={styles.errorMessage}>
-                {errors.salaryRange.value?.message}
-              </p>
+            {errors.businessType?.message ? (
+              <p className={styles.errorMessage}>{errors.businessType?.message}</p>
             ) : (
               ""
             )}
@@ -397,4 +305,4 @@ const LoanFormUI: React.FC<ApplyProps> = ({
   );
 };
 
-export { LoanFormUI };
+export { LoanFormConfamUI };
