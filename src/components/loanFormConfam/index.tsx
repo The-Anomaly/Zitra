@@ -262,7 +262,7 @@ const LoanFormConfamUI: React.FC<ApplyProps> = ({
           <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
             <label>Type of Business</label>
             <input
-              type={"number"}
+              type={"text"}
               {...register("businessType", {
                 required: true,
               })}
