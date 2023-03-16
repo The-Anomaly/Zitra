@@ -32,7 +32,7 @@ const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
               },
               To: [
                 {
-                  Email: "LoansPersonallending@zitrainvestments.com",
+                  Email: "Personallending@zitrainvestments.com",
                   Name: "Loans and Personal Lendings",
                 },
               ],
