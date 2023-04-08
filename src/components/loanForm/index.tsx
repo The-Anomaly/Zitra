@@ -7,175 +7,14 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import * as yup from "yup";
 import { useOutsideAlerter } from "helpers";
 import Select from "react-select";
+import {
+  salaryRangeOptions,
+  locationOptions,
+  optionType,
+  optionTypeSchema,
+} from "utils";
 
-interface optionType {
-  label: string;
-  value: string;
-}
-
-const salaryRangeOptions: optionType[] = [
-  {
-    label: "80,000 - 150,000",
-    value: "80,000 - 150,000",
-  },
-  {
-    label: "150,000 - 500,000",
-    value: "150,000 - 500,000",
-  },
-  {
-    label: "550,000 and above",
-    value: "550,000 and above",
-  },
-];
-
-const locationOptions: optionType[] = [
-  {
-    label: "Abia",
-    value: "Abia",
-  },
-  {
-    label: "Adamawa",
-    value: "Adamawa",
-  },
-  {
-    label: "Akwa Ibom",
-    value: "Akwa Ibom",
-  },
-  {
-    label: "Anambra",
-    value: "Anambra",
-  },
-  {
-    label: "Bauchi",
-    value: "Bauchi",
-  },
-  {
-    label: "Bayelsa",
-    value: "Bayelsa",
-  },
-  {
-    label: "Benue",
-    value: "Benue",
-  },
-  {
-    label: "Borno",
-    value: "Borno",
-  },
-  {
-    label: "Cross River",
-    value: "Cross River",
-  },
-  {
-    label: "Delta",
-    value: "Delta",
-  },
-  {
-    label: "Ebonyi",
-    value: "Ebonyi",
-  },
-  {
-    label: "Edo",
-    value: "Edo",
-  },
-  {
-    label: "Ekiti",
-    value: "Ekiti",
-  },
-  {
-    label: "Enugu",
-    value: "Enugu",
-  },
-  {
-    label: "Gombe",
-    value: "Gombe",
-  },
-  {
-    label: "Imo",
-    value: "Imo",
-  },
-  {
-    label: "Jigawa",
-    value: "Jigawa",
-  },
-  {
-    label: "Kaduna",
-    value: "Kaduna",
-  },
-  {
-    label: "Kano",
-    value: "Kano",
-  },
-  {
-    label: "Katsina",
-    value: "Katsina",
-  },
-  {
-    label: "Kebbi",
-    value: "Kebbi",
-  },
-  {
-    label: "Kogi",
-    value: "Kogi",
-  },
-  {
-    label: "Kwara",
-    value: "Kwara",
-  },
-  {
-    label: "Lagos",
-    value: "Lagos",
-  },
-  {
-    label: "Nasarawa",
-    value: "Nasarawa",
-  },
-  {
-    label: "Niger",
-    value: "Niger",
-  },
-  {
-    label: "Ogun",
-    value: "Ogun",
-  },
-  {
-    label: "Ondo",
-    value: "Ondo",
-  },
-  {
-    label: "Osun",
-    value: "Osun",
-  },
-  {
-    label: "Oyo",
-    value: "Oyo",
-  },
-  {
-    label: "Plateau",
-    value: "Plateau",
-  },
-  {
-    label: "Rivers",
-    value: "Rivers",
-  },
-  {
-    label: "Sokoto",
-    value: "Sokoto",
-  },
-  {
-    label: "Taraba",
-    value: "Taraba",
-  },
-  {
-    label: "Yobe",
-    value: "Yobe",
-  },
-  {
-    label: "Zamfara",
-    value: "Zamfara",
-  },
-];
-
-interface ApplyData {
+export interface LoanData {
   firstName: string;
   lastName: string;
   phone: string;
@@ -185,7 +24,7 @@ interface ApplyData {
   location: optionType;
 }
 
-const initialValues: ApplyData = {
+const initialValues: LoanData = {
   firstName: "",
   lastName: "",
   phone: "",
@@ -200,11 +39,6 @@ const initialValues: ApplyData = {
     value: "",
   },
 };
-
-const optionTypeSchema = yup.object({
-  label: yup.string().required("Required"),
-  value: yup.string().required("Required"),
-});
 
 const applySchema = yup
   .object({
@@ -225,7 +59,7 @@ const applySchema = yup
 interface ApplyProps {
   show: boolean;
   closeModal: () => void;
-  submit: (data: ApplyData) => void;
+  submit: (data: LoanData) => void;
   clearForm: boolean;
 }
 
@@ -245,12 +79,12 @@ const LoanFormUI: React.FC<ApplyProps> = ({
     reset,
     setValue,
     watch,
-  } = useForm<ApplyData>({
+  } = useForm<LoanData>({
     resolver: yupResolver(applySchema),
     defaultValues: initialValues,
   });
 
-  const onSubmit: SubmitHandler<ApplyData> = (data) => submit(data);
+  const onSubmit: SubmitHandler<LoanData> = (data) => submit(data);
 
   React.useEffect(() => {
     reset();

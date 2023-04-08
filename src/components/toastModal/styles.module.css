@@ -12,11 +12,11 @@
 .body {
   background: var(--bg-color-004);
   width: 90%;
-  font-family: 'Euclid';
+  font-family: "Euclid";
   padding: 1.2rem;
   border-radius: 8px;
   max-width: 380px;
-  min-height: 100px;
+  min-height: 80px;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -28,16 +28,18 @@
   margin-bottom: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  width: calc(100% - 36px);
 }
 .txt {
   color: #989fb1;
   line-height: 1.5;
 }
-.closeBtn  {
-  margin-left: auto;
+.closeBtn {
   display: block;
-  margin-bottom: -1rem;
-  margin-right: -6px;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  margin: 0;
   cursor: pointer;
 }
 .closeBtn path {

@@ -6,19 +6,26 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, SubmitHandler } from "react-hook-form";
 import * as yup from "yup";
 import { useOutsideAlerter } from "helpers";
+import Select from "react-select";
+import { optionType, optionTypeSchema } from "utils/select";
+import { tenureOptions } from "utils";
 
-interface ApplyData {
+export interface InvestmentData {
   firstName: string;
   lastName: string;
   phone: string;
   email: string;
+  amount: string;
+  tenure: optionType;
 }
 
-const initialValues: ApplyData = {
+const initialValues: InvestmentData = {
   firstName: "",
   lastName: "",
   phone: "",
   email: "",
+  amount: "",
+  tenure: { label: "", value: "" },
 };
 
 const applySchema = yup
@@ -31,13 +38,18 @@ const applySchema = yup
     firstName: yup.string().required("Required"),
     lastName: yup.string().required("Required"),
     email: yup.string().email("Enter a valid email").required("Required"),
+    amount: yup
+      .string()
+      .required("Required")
+      .matches(/[0-9]/, "Investment amount should only contain digits"),
+    tenure: optionTypeSchema,
   })
   .required();
 
 interface ApplyProps {
   show: boolean;
   closeModal: () => void;
-  submit: (data: ApplyData) => void;
+  submit: (data: InvestmentData) => void;
   clearForm: boolean;
 }
 
@@ -55,12 +67,14 @@ const InvestmentFormUI: React.FC<ApplyProps> = ({
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<ApplyData>({
+    setValue,
+    watch,
+  } = useForm<InvestmentData>({
     resolver: yupResolver(applySchema),
     defaultValues: initialValues,
   });
 
-  const onSubmit: SubmitHandler<ApplyData> = (data) => submit(data);
+  const onSubmit: SubmitHandler<InvestmentData> = (data) => submit(data);
 
   React.useEffect(() => {
     reset();
@@ -132,6 +146,39 @@ const InvestmentFormUI: React.FC<ApplyProps> = ({
             />
             {errors.email?.message ? (
               <p className={styles.errorMessage}>{errors.email?.message}</p>
+            ) : (
+              ""
+            )}
+          </div>
+          <div className={styles.inputWrap}>
+            <label>Investment amount (NGN)</label>
+            <input
+              type={"number"}
+              {...register("amount", {
+                required: true,
+              })}
+            />
+            {errors.amount?.message ? (
+              <p className={styles.errorMessage}>{errors.amount?.message}</p>
+            ) : (
+              ""
+            )}
+          </div>
+          <div className={`${styles.inputWrap}`}>
+            <label>Tenure</label>
+            <Select
+              onChange={(x: any) => setValue("tenure", x)}
+              placeholder={"Select a tenure"}
+              className={`${styles.select}`}
+              classNamePrefix="formSelect"
+              name={"tenure"}
+              options={tenureOptions}
+              value={watch("tenure").value ? watch("tenure") : null}
+            />
+            {!watch("tenure").value && errors.tenure?.value?.message ? (
+              <p className={styles.errorMessage}>
+                {errors.tenure.value?.message}
+              </p>
             ) : (
               ""
             )}

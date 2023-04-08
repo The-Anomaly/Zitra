@@ -7,96 +7,9 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import * as yup from "yup";
 import { useOutsideAlerter } from "helpers";
 import Select from "react-select";
+import { optionType, optionTypeSchema, locationOptions } from "utils";
 
-interface optionType {
-  label: string;
-  value: string;
-}
-
-const locationOptions: optionType[] = [
-  {
-    label: "Alimosho",
-    value: "Alimosho",
-  },
-  {
-    label: "Ajeromi-Ifelodun",
-    value: "Ajeromi-Ifelodun",
-  },
-  {
-    label: "Kosofe",
-    value: "Kosofe",
-  },
-  {
-    label: "Mushin",
-    value: "Mushin",
-  },
-  {
-    label: "Ojo",
-    value: "Ojo",
-  },
-  {
-    label: "Oshodi-Isolo",
-    value: "Oshodi-Isolo",
-  },
-  {
-    label: "Ikorodu",
-    value: "Ikorodu",
-  },
-  {
-    label: "Surulere",
-    value: "Surulere",
-  },
-  {
-    label: "Agege",
-    value: "Agege",
-  },
-  {
-    label: "Ifako-Ijaiye",
-    value: "Ifako-Ijaiye",
-  },
-  {
-    label: "Somolu",
-    value: "Somolu",
-  },
-  {
-    label: "Amuwo-Odofin",
-    value: "Amuwo-Odofin",
-  },
-  {
-    label: "Lagos Mainland",
-    value: "Lagos Mainland",
-  },
-  {
-    label: "Ikeja",
-    value: "Ikeja",
-  },
-  {
-    label: "Eti-Osa",
-    value: "Eti-Osa",
-  },
-  {
-    label: "Badagry",
-    value: "Badagry",
-  },
-  {
-    label: "Apapa",
-    value: "Apapa",
-  },
-  {
-    label: "Lagos Island",
-    value: "Lagos Island",
-  },
-  {
-    label: "Epe",
-    value: "Epe",
-  },
-  {
-    label: "Ibeju-Lekki",
-    value: "Ibeju-Lekki",
-  },
-];
-
-interface ApplyData {
+export interface ConfamData {
   firstName: string;
   lastName: string;
   phone: string;
@@ -106,7 +19,7 @@ interface ApplyData {
   location: optionType;
 }
 
-const initialValues: ApplyData = {
+const initialValues: ConfamData = {
   firstName: "",
   lastName: "",
   phone: "",
@@ -118,11 +31,6 @@ const initialValues: ApplyData = {
     value: "",
   },
 };
-
-const optionTypeSchema = yup.object({
-  label: yup.string().required("Required"),
-  value: yup.string().required("Required"),
-});
 
 const applySchema = yup
   .object({
@@ -143,7 +51,7 @@ const applySchema = yup
 interface ApplyProps {
   show: boolean;
   closeModal: () => void;
-  submit: (data: ApplyData) => void;
+  submit: (data: ConfamData) => void;
   clearForm: boolean;
 }
 
@@ -163,19 +71,19 @@ const LoanFormConfamUI: React.FC<ApplyProps> = ({
     reset,
     setValue,
     watch,
-  } = useForm<ApplyData>({
+  } = useForm<ConfamData>({
     resolver: yupResolver(applySchema),
     defaultValues: initialValues,
   });
 
-  const onSubmit: SubmitHandler<ApplyData> = (data) => submit(data);
+  const onSubmit: SubmitHandler<ConfamData> = (data) => submit(data);
 
   React.useEffect(() => {
     reset();
   }, [clearForm]);
 
   if (!show) return null;
-  
+
   return (
     <aside className={styles.dialog} role={"dialog"}>
       <div ref={modalBody} className={styles.body}>
@@ -244,7 +152,9 @@ const LoanFormConfamUI: React.FC<ApplyProps> = ({
               ""
             )}
           </div>
-          <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
+          <div
+            className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}
+          >
             <label>BVN/NIN/LASSRA</label>
             <input
               type={"number"}
@@ -259,7 +169,9 @@ const LoanFormConfamUI: React.FC<ApplyProps> = ({
             )}
           </div>
 
-          <div className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}>
+          <div
+            className={`${styles.inputWrap} ${styles.halfWidth} ${styles.fullWidthMobile}`}
+          >
             <label>Type of Business</label>
             <input
               type={"text"}
@@ -268,7 +180,9 @@ const LoanFormConfamUI: React.FC<ApplyProps> = ({
               })}
             />
             {errors.businessType?.message ? (
-              <p className={styles.errorMessage}>{errors.businessType?.message}</p>
+              <p className={styles.errorMessage}>
+                {errors.businessType?.message}
+              </p>
             ) : (
               ""
             )}

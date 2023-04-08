@@ -1,5 +1,5 @@
 import axios from "axios";
-import { LoanFormConfamUI, Preloader, Toast } from "components";
+import { ConfamData, LoanFormConfamUI, Preloader, Toast } from "components";
 import { MAILJET_API_KEY, MAILJET_SECRET_KEY } from "config";
 import * as React from "react";
 
@@ -18,7 +18,7 @@ const LoanFormConfam: React.FC<ApplyProps> = ({ show, closeModal }) => {
     title: "",
     text: "",
   });
-  const sendEmail = (data) => {
+  const sendEmail = (data: ConfamData) => {
     setLoading(true);
     axios
       .post(
@@ -69,7 +69,7 @@ const LoanFormConfam: React.FC<ApplyProps> = ({ show, closeModal }) => {
           setToast({
             show: true,
             type: true,
-            title: "Great",
+            title: "Application Received",
             text: res.data.message,
           });
         }
@@ -78,7 +78,7 @@ const LoanFormConfam: React.FC<ApplyProps> = ({ show, closeModal }) => {
         setToast({
           show: true,
           type: false,
-          title: "Error",
+          title: "Failed to send application",
           text: err.response.data.message,
         });
       })

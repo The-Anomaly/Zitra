@@ -1,5 +1,5 @@
 import axios from "axios";
-import { InvestmentFormUI, Preloader, Toast } from "components";
+import { InvestmentData, InvestmentFormUI, Preloader, Toast } from "components";
 import { MAILJET_API_KEY, MAILJET_SECRET_KEY } from "config";
 import * as React from "react";
 
@@ -17,7 +17,7 @@ const InvestmentForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
     title: "",
     text: "",
   });
-  const sendEmail = (data) => {
+  const sendEmail = (data: InvestmentData) => {
     setLoading(true);
     axios
       .post(
@@ -44,6 +44,8 @@ const InvestmentForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
             <li>Last name: <b>${data.lastName}</b></li>
             <li>Email address: <b>${data.email}</b></li>
             <li>Phone number: <b>${data.phone}</b></li>
+            <li>Investment Amount: <b>NGN ${data.amount}</b></li>
+            <li>Tenure: <b>${data.tenure.value}</b></li>
             </ul>
             Best regards.
           `,
@@ -65,7 +67,7 @@ const InvestmentForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
           setToast({
             show: true,
             type: true,
-            title: "Great",
+            title: "Application Received",
             text: res.data.message,
           });
         }
@@ -74,7 +76,7 @@ const InvestmentForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
         setToast({
           show: true,
           type: false,
-          title: "Error",
+          title: "Failed to send application",
           text: err.response.data.message,
         });
       })
