@@ -96,7 +96,7 @@ const Navbar: React.FC<NavbarProps> = ({ active, apply }) => {
           ) : (
             ""
           )}
-          {(showNav && mobile) || !mobile ? (
+          {/* {(showNav && mobile) || !mobile ? (
             <Button
               className={styles.navBtn}
               onClick={() => {
@@ -108,7 +108,7 @@ const Navbar: React.FC<NavbarProps> = ({ active, apply }) => {
             </Button>
           ) : (
             ""
-          )}
+          )} */}
           <button
             onClick={() => setShowNav(!showNav)}
             className={`${styles.hamburger} ${
