@@ -32,8 +32,12 @@ const LoanForm: React.FC<ApplyProps> = ({ show, closeModal }) => {
               },
               To: [
                 {
-                  Email: "Personallending@zitrainvestments.com",
-                  Name: "Loans and Personal Lendings",
+                  Email: "ifedolapo.akinpelu@zitrainvestments.com",
+                  Name: "Ifedolapo Akinpelu",
+                },
+                {
+                  Email: "tomisin.ogundemuren@zitraassetmanagement.com",
+                  Name: "Tomisin Ogundemuren",
                 },
               ],
               Subject: "New Loan Submission from zitrainvestments.com",
