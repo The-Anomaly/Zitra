@@ -3,6 +3,8 @@ import {
   teamMemberImg1,
   teamMemberImg10,
   teamMemberImg11,
+  teamMemberImg12,
+  teamMemberImg13,
   teamMemberImg2,
   teamMemberImg3,
   teamMemberImg4,
@@ -82,13 +84,13 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
   const members: MemberProps[] = [
     {
       image: teamMemberImg9,
-      name: "Tunde Obadero (MIOD)",
+      name: "Tunde Obadero",
       role: "Chief Executive Officer",
       description: `Tunde has over 18 years experience in Strategy, Operations and Risk Management. Tunde has previously held roles as: Chief Executive Officer, CS Advance; Chief Commercial Officer, Pledge Finance; Head of Operations, Page Financials; Head of Operations, Skye Bank Plc. Tunde has an MBA from Lagos Business School and has had a senior management course at INSEAD.`,
     },
     {
       image: teamMemberImg10,
-      name: "Femi Okuyelu (MIOD)",
+      name: "Femi Okuyelu",
       role: "Director, Business Development",
       description: `Femi Holds a BSc and an MBA from the university of Lagos. Femi has 15 years experience in Fintech, Business development, marketing and Strategic partnership. Femi has previously held roles as: Country Manager, Ferratum NG; Commercial Advisor, Embassy of Finland in Nigeria; Senior Market Analyst, Business Finland; Business Development Lead, Skye Bank Plc.`,
     },
@@ -108,17 +110,17 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
     {
       image: teamMemberImg2,
       name: "John Usang",
-      role: "Head Internal Control and Risk",
+      role: "Head, Zitra Microbusiness",
       description:
         "John Usang holds Bachelor of Arts from the prestigious University of Ibadan, Nigeria. He is a finance professional with over 7 years of experience in Enterprise Risk management, Credit Risk, Internal Control and Compliance. Before joining Zitra Investments, he was instrumental in formulating policies and procedures across several start-ups within the Microfinance Industry.",
     },
-    {
-      image: teamMemberImg3,
-      name: "Omolola Olomoyeba",
-      role: "Head of Micro Lending",
-      description:
-        "Omolola has over 8 years’ experience in Sales and Customer Service, She has held previous roles as a Sales Team Lead at CSadvance Finance Company, a (sister company to Cardinalstone Partners), Sales supervisor at Page financials, Sales Executive at Renmoney,Customer Care executive at Consol Ltd and Sales personnel at One finance Limited. Omololahas a B.A from Adekunle Ajasin University. Mercy currently heads the Micro Lending team of Zitra Investments",
-    },
+    // {
+    //   image: teamMemberImg3,
+    //   name: "Omolola Olomoyeba",
+    //   role: "Head of Micro Lending",
+    //   description:
+    //     "Omolola has over 8 years’ experience in Sales and Customer Service, She has held previous roles as a Sales Team Lead at CSadvance Finance Company, a (sister company to Cardinalstone Partners), Sales supervisor at Page financials, Sales Executive at Renmoney,Customer Care executive at Consol Ltd and Sales personnel at One finance Limited. Omololahas a B.A from Adekunle Ajasin University. Mercy currently heads the Micro Lending team of Zitra Investments",
+    // },
     {
       image: teamMemberImg4,
       name: "Adebola Shotinola PHRi™️",
@@ -126,12 +128,19 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
       description:
         " Adebola is a certified HR Generalist that drives business outcomes by deploying experience of and competence in talent acquisition, development and implementation of HR Strategy, change management, learning &amp; development l, performance management and business knowledge.",
     },
+    // {
+    //   image: teamMemberImg5,
+    //   name: "Adeolu Ogundeji ",
+    //   role: "Head, Sales and Lending",
+    //   description:
+    //     "Adeolu is an experienced and revenue-driven Business Manager specialising in retail sales, Strategic Partnership and Frontend Development with over 8 years of experience working in different commercial and business operations functions, including Sales, and Business Analysis with renowned institutions like Renmoney, AIICO, Page Financials and Andela.  He has a deep understanding of the Nigerian financial services industry and has been part of many initiatives geared toward financial inclusion in the lending space.",
+    // },
     {
-      image: teamMemberImg5,
-      name: "Adeolu Ogundeji ",
+      image: teamMemberImg12,
+      name: "Emmanuel Njoku",
       role: "Head, Sales and Lending",
-      description:
-        "Adeolu is an experienced and revenue-driven Business Manager specialising in retail sales, Strategic Partnership and Frontend Development with over 8 years of experience working in different commercial and business operations functions, including Sales, and Business Analysis with renowned institutions like Renmoney, AIICO, Page Financials and Andela.  He has a deep understanding of the Nigerian financial services industry and has been part of many initiatives geared toward financial inclusion in the lending space.",
+      description: `Has over 13 years work experience working in Finance industry , which began in Ecobank, he worked at different Branch banking operations roles. While at Stanbic IBTC was in a Sales and relationship management role, started as Personal banker to Executive Banker and then Private Banker managing HNI clients, growing Customer acquisition, increase liability and asset in the segment portfolio.
+      A graduate of Economics from DELSU, associate member Institute of Chartered Economist of Nigeria (ICEN) and MBA University of Lagos (in view).`,
     },
     {
       image: teamMemberImg6,
@@ -154,6 +163,31 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
       description: `Obra holds a B.Sc in Microbiology from Madonna University, Anambra; and an MBA, Business Administration from Lagos Business School.
       She has 4+ years of combined work experience in relationship management, business development, Marketing, budget management, and business management. Obra has held previous positions such as Sales Manager at Godrej Nigeria, General Manager at Amytorix Company Limited.`,
     },
+    {
+      image: teamMemberImg13,
+      name: "Oloriegbe Sheme",
+      role: "Head, Internal Control and Risk",
+      description:
+        "Oloriegbe Sheme Israel is a graduate of accounting from the Prestigious Obafemi Awolowo University Ile Ife. He has 7 years’ experience across Accounting, Credit Administration, Internal Control and Audit from Royal Exchange, Finatrust Microfinance Bank and Dao Professional Services.",
+    },
+    // {
+    //   image: teamMemberImg1,
+    //   name: "",
+    //   role: "Board of Directors",
+    //   description: ""
+    // },
+    // {
+    //   image: teamMemberImg1,
+    //   name: "",
+    //   role: "Board of Directors",
+    //   description: ""
+    // },
+    // {
+    //   image: teamMemberImg1,
+    //   name: "",
+    //   role: "Board of Directors",
+    //   description: ""
+    // },
   ];
 
   const onSubmit: SubmitHandler<ContactData> = (data) => {

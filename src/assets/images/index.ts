@@ -38,10 +38,16 @@ import teamMemberImg8 from "./teamMemberImg8.png";
 import teamMemberImg9 from "./teamMemberImg9.png";
 import teamMemberImg10 from "./teamMemberImg10.png";
 import teamMemberImg11 from "./teamMemberImg11.png";
+import teamMemberImg12 from "./teamMemberImg12.png";
+import teamMemberImg13 from "./teamMemberImg13.png";
 import remitaLogo from "./remitaLogo.png";
 import krediLogo from "./krediLogo.png";
+import ifitnessLogo from "./ifitnessLogo.png";
 
 export {
+  ifitnessLogo,
+  teamMemberImg13,
+  teamMemberImg12,
   krediLogo,
   remitaLogo,
   logo,

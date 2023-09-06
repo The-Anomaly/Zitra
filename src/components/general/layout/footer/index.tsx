@@ -153,8 +153,8 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
           <div className={styles.copyright}>
             <p>© 2022 Zitra Investments. All rights reserved. </p>
             <p>
-              A COMPANY OF STRONGHOLD INVESTMENT LIMITED (RC 269915), Registered
-              Fund Manager by the Securities and Exchange Commission (SEC).
+              Registered Fund Manager by the Securities and Exchange Commission
+              (SEC)
             </p>
           </div>
         </div>
