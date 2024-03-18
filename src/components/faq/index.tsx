@@ -87,7 +87,7 @@ const FAQUI = () => {
     },
     {
       question: "What is the interest rate on Zitra investments Loans?",
-      answer: `Reach out to us on info@zitrainvestments.com or call 017002801 so a relationship manager can contact you.`,
+      answer: `Reach out to us on info@zitrainvestments.com or call 02017002801 so a relationship manager can contact you.`,
     },
     {
       question: "How do I repay my loan?",
@@ -139,7 +139,7 @@ const FAQUI = () => {
     },
     {
       question: "How do I start investing?",
-      answer: `Reach out to us on info@zitrainvestments.com or call 017002801 so a relationship manager can contact you.`,
+      answer: `Reach out to us on info@zitrainvestments.com or call 02017002801 so a relationship manager can contact you.`,
     },
     {
       question: "What are the investment products Zitra Investments has?",
@@ -188,7 +188,7 @@ const FAQUI = () => {
     },
     {
       question: "Who should I contact to submit a complaint?",
-      answer: `Please send an email info@zitrainvestments.com or call 017002801 and we will take it from there.`,
+      answer: `Please send an email info@zitrainvestments.com or call 02017002801 and we will take it from there.`,
     },
   ];
 

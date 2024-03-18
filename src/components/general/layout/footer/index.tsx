@@ -82,8 +82,8 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
             <p className={styles.ttl}>Contact</p>
             <ul className={styles.list}>
               <li>
-                <a href="tel:017002801" target={"_blank"} rel="noreferrer">
-                  017002801
+                <a href="tel:02017002801" target={"_blank"} rel="noreferrer">
+                  02017002801
                 </a>
               </li>
               <li>
