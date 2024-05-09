@@ -3,10 +3,11 @@
   padding-bottom: 8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .txtSec {
   width: 40%;
-  padding-top: 2.5rem;
+  /* padding-top: 2.5rem; */
 }
 .ttl {
   font-family: "Metropolis";
@@ -28,6 +29,12 @@
   margin-bottom: 1.2rem;
   letter-spacing: 0.1px;
 }
+.txt3 {
+  color: var(--text-color-002);
+  line-height: 2;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1px;
+}
 .btn {
 }
 .img {
@@ -35,6 +42,44 @@
 }
 .optionContainer:nth-of-type(odd) {
   flex-direction: row-reverse;
+}
+
+.pointList {
+  max-width: 450px;
+  padding-bottom: 0.5rem;
+}
+.point {
+  position: relative;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.point::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../assets/vectors/tickCircle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -1rem;
+  top: 2px;
+}
+.pointTtl {
+  color: var(--text-color-001);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+.pointTxt {
+  color: var(--text-color-002);
+  line-height: 1.5;
+  position: relative;
+  margin-left: 1rem;
+}
+.pointTxt b {
+  color: var(--text-color-001);
 }
 
 @media screen and (max-width: 800px) {
@@ -45,6 +90,7 @@
   }
   .txtSec {
     width: 100%;
+    padding-top: 2.5rem;
   }
   .img {
     width: 100%;

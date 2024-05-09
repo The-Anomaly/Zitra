@@ -90,7 +90,7 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
     },
     {
       image: teamMemberImg10,
-      name: "Femi Okuyelu",
+      name: "Femi Okuyelu (MIOD)",
       role: "Director, Business Development",
       description: `Femi Holds a BSc and an MBA from the university of Lagos. Femi has 15 years experience in Fintech, Business development, marketing and Strategic partnership. Femi has previously held roles as: Country Manager, Ferratum NG; Commercial Advisor, Embassy of Finland in Nigeria; Senior Market Analyst, Business Finland; Business Development Lead, Skye Bank Plc.`,
     },
@@ -202,7 +202,7 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
     <>
       <section className={`container ${styles.aboutContainer}`}>
         <div className={styles.introSec}>
-          <p className={styles.tag}>Our company</p>
+          {/* <p className={styles.tag}>Our company</p> */}
           <h1 className={styles.ttl1}>About Us</h1>
           <p className={styles.txt1}>
             At Zitra, we provide our clients with premium value-add and build
@@ -277,7 +277,7 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
         />
       </section>
       <section className={`container ${styles.teamContainer}`}>
-        <p className={styles.tag}>We’re hiring!</p>
+        {/* <p className={styles.tag}>We’re hiring!</p> */}
         <h4 className={styles.teamTtl}>Meet our team</h4>
         <p className={styles.teamTxt}>
           Our leadership team comprises of young and vibrant professionals, with

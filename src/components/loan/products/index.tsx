@@ -1,14 +1,15 @@
-import { raizImg, sharpalyImg } from "assets";
+import { raizImg, sharpalyImg, smallBusinessImg } from "assets";
 import { Button } from "components/general";
 import * as React from "react";
 import styles from "./styles.module.css";
 
 interface ProductsProps {
   raiz: () => void;
+  smallBusiness: () => void;
   confam: () => void;
 }
 
-const Products: React.FC<ProductsProps> = ({ raiz, confam }) => {
+const Products: React.FC<ProductsProps> = ({ raiz, confam, smallBusiness }) => {
   return (
     <>
       <section id="raiz" className={styles.productBg}>
@@ -99,6 +100,34 @@ const Products: React.FC<ProductsProps> = ({ raiz, confam }) => {
           </div>
           <div className={styles.imgSec}>
             <img className={styles.img} src={sharpalyImg} />
+          </div>
+        </div>
+      </section>
+      <section id="small-business" className={styles.productBg}>
+        <div className={`container ${styles.productContainer} ${styles.smallBiz}`}>
+          <div className={styles.txtSec}>
+            <h2 className={styles.ttl}>Support for Small Businesses</h2>
+            <p className={styles.txt}>
+              Access Funding and grow your business today.
+              <br />
+              We provide businesses with the capital needed to fulfill large
+              orders and seize growth opportunities.
+              <br />
+              Secure the capital needed to take on big projects and expand your
+              business.
+            </p>
+            <div className={styles.pointList}>
+              <div className={styles.point}>
+                <p className={styles.pointTtl}>Quick turnaround time</p>
+              </div>
+              <div className={styles.point}>
+                <p className={styles.pointTtl}>24/7 Customer support</p>
+              </div>
+            </div>
+            <Button onClick={smallBusiness}>Apply now</Button>
+          </div>
+          <div className={styles.imgSec}>
+            <img className={styles.img} src={smallBusinessImg} />
           </div>
         </div>
       </section>

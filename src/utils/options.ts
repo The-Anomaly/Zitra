@@ -112,3 +112,14 @@ export const locationOptions: optionType[] = [
     value: "Ibeju-Lekki",
   },
 ];
+
+export const smallBusinesLoanOptions: optionType[] = [
+  {
+    label: "LPO financing",
+    value: "LPO financing",
+  },
+  {
+    label: "Invoice discounting",
+    value: "Invoice discounting",
+  },
+];

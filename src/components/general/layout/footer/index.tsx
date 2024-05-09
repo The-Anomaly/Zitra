@@ -8,6 +8,9 @@ import {
   LogoWhite,
   Twitter,
   Youtube,
+  SmsIcon,
+  LocationIcon,
+  CallIcon,
 } from "assets";
 import * as React from "react";
 import { Link } from "react-router-dom";
@@ -25,6 +28,8 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
   React.useEffect(() => {
     setEmail("");
   }, [clear]);
+
+  const address = "D59, Landbridge Avenue Oniru, Lekki, Lagos.";
 
   return (
     <>
@@ -49,6 +54,12 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
               </li>
               <li>
                 <Link to={Routes.assetManagement}>Asset management</Link>
+              </li>
+              <li>
+                <Link to={Routes.investments}>Investment</Link>
+              </li>
+              <li>
+                <Link to={Routes.loans}>Loans</Link>
               </li>
               <li>
                 <Link to={Routes.about}>About Us</Link>
@@ -76,17 +87,29 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
               <li>
                 <Link to={`${Routes.investments}#primero`}>Zitra Primero</Link>
               </li>
+              <li>
+                <Link to={`${Routes.loans}#small-business`}>
+                  Support for small businesses
+                </Link>
+              </li>
+              <li>
+                <Link to={`${Routes.investments}#dollar-fund`}>
+                  Zitra Dollar Fund
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <p className={styles.ttl}>Contact</p>
-            <ul className={styles.list}>
+            <ul className={`${styles.list} ${styles.contactlist}`}>
               <li>
+                <CallIcon />
                 <a href="tel:02017002801" target={"_blank"} rel="noreferrer">
                   02017002801
                 </a>
               </li>
               <li>
+                <SmsIcon />
                 <a
                   href="mailto:info@zitrainvestments.com"
                   target={"_blank"}
@@ -95,7 +118,16 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                   info@zitrainvestments.com
                 </a>
               </li>
-              <li>Address D59, Landbridge Avenue Victoria Island, Lagos.</li>
+              <li>
+                <LocationIcon />
+                <a
+                  href={`https://www.google.com/maps?q=${address}`}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  Address: {address}
+                </a>
+              </li>
               <p className={`${styles.ttl} ${styles.socialsTtl}`}>Socials</p>
               <div className={styles.socials}>
                 <a

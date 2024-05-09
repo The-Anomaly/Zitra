@@ -19,6 +19,7 @@ import sharpalyImg from "./sharpalyImg.png";
 import investmentsHeroImg from "./investmentsHeroImg.png";
 import investmentOptionImg1 from "./investmentOptionImg1.png";
 import investmentOptionImg2 from "./investmentOptionImg2.png";
+import investmentOptionImg3 from "./investmentOptionImg3.png";
 import assetsHeroImg from "./assetsHeroImg.png";
 import assetsOptionImg1 from "./assetsOptionImg1.png";
 import assetsOptionImg2 from "./assetsOptionImg2.png";
@@ -43,8 +44,11 @@ import teamMemberImg13 from "./teamMemberImg13.png";
 import remitaLogo from "./remitaLogo.png";
 import krediLogo from "./krediLogo.png";
 import ifitnessLogo from "./ifitnessLogo.png";
+import smallBusinessImg from "./smallBusinessImg.png";
 
 export {
+  investmentOptionImg3,
+  smallBusinessImg,
   ifitnessLogo,
   teamMemberImg13,
   teamMemberImg12,

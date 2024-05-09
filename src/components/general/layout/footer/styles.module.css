@@ -52,6 +52,12 @@
 }
 .list li {
   margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.list li svg {
+  min-width: 20px;
 }
 .list li a {
 }

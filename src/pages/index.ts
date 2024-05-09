@@ -6,4 +6,5 @@ export * from "./about";
 export * from "./loanForm";
 export * from "./investmentForm";
 export * from "./faq";
-export * from "./loanFormConfam"
+export * from "./loanFormConfam";
+export * from "./investmentFormDollar";

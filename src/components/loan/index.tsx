@@ -5,13 +5,14 @@ import { Products } from "./products";
 interface LoanProps {
   raiz: () => void;
   confam: () => void;
+  smallBusiness: () => void;
 }
 
-const LoanUI: React.FC<LoanProps> = ({ raiz, confam }) => {
+const LoanUI: React.FC<LoanProps> = ({ raiz, confam, smallBusiness }) => {
   return (
     <>
       <Hero />
-      <Products raiz={raiz} confam={confam} />
+      <Products raiz={raiz} confam={confam} smallBusiness={smallBusiness} />
     </>
   );
 };
