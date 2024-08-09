@@ -70,6 +70,9 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
               <li>
                 <Link to={Routes.faqs}>FAQs</Link>
               </li>
+              <li>
+                <Link to={Routes.privacy_policy}>Privacy Policy</Link>
+              </li>
             </ul>
           </div>
           <div>

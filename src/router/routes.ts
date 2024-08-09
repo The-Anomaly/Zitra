@@ -15,4 +15,5 @@ export const Routes = {
   assetManagement: "/asset-management",
   about: "/about",
   faqs: "/faqs",
+  privacy_policy: "/privacy-policy",
 };

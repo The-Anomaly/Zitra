@@ -1,5 +1,13 @@
 import { Layout } from "components";
-import { About, AssetManagement, FAQ, Home, Investments, Loan } from "pages";
+import {
+  About,
+  AssetManagement,
+  FAQ,
+  Home,
+  Investments,
+  Loan,
+  PrivacyPolicy,
+} from "pages";
 import { RouteProps } from "react-router-dom";
 import { Routes } from "./routes";
 
@@ -71,5 +79,15 @@ export const RouteBuilder: RouteBuilderItem[] = [
     props: {
       active: "faqs",
     },
+  },
+  {
+    path: Routes.privacy_policy,
+    Layout: Layout,
+    Element: PrivacyPolicy,
+  },
+  {
+    path: "*",
+    Layout: Layout,
+    Element: Home,
   },
 ];

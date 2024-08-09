@@ -8,3 +8,4 @@ export * from "./investmentForm";
 export * from "./faq";
 export * from "./loanFormConfam";
 export * from "./investmentFormDollar";
+export * from "./privacyPolicy";

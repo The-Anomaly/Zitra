@@ -11,3 +11,4 @@ export * from "./faq";
 export * from "./loanFormConfam";
 export * from "./loanFormSmallBusiness";
 export * from "./investmentFormDollar"
+export * from "./privacyPolicy"
