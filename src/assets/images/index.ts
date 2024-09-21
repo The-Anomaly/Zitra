@@ -41,12 +41,14 @@ import teamMemberImg10 from "./teamMemberImg10.png";
 import teamMemberImg11 from "./teamMemberImg11.png";
 import teamMemberImg12 from "./teamMemberImg12.png";
 import teamMemberImg13 from "./teamMemberImg13.png";
+import teamMemberImg14 from "./teamMemberImg14.png";
 import remitaLogo from "./remitaLogo.png";
 import krediLogo from "./krediLogo.png";
 import ifitnessLogo from "./ifitnessLogo.png";
 import smallBusinessImg from "./smallBusinessImg.png";
 
 export {
+  teamMemberImg14,
   investmentOptionImg3,
   smallBusinessImg,
   ifitnessLogo,

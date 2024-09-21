@@ -29,7 +29,10 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
     setEmail("");
   }, [clear]);
 
-  const address = "D59, Landbridge Avenue Oniru, Lekki, Lagos.";
+  const lagosAddress = "D59, Landbridge Avenue Oniru, Lekki, Lagos.";
+  const abujaAddress =
+    "Plot 267 Asebe street Mabushi District Casdastral Zone BO6,Abuja";
+  const uyoAddress = "129 Aka Etinan Road, Uyo.";
 
   return (
     <>
@@ -121,15 +124,41 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                   info@zitrainvestments.com
                 </a>
               </li>
-              <li>
-                <LocationIcon />
-                <a
-                  href={`https://www.google.com/maps?q=${address}`}
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  Address: {address}
-                </a>
+              <li className={styles.addresses} >
+                <div>
+                  <LocationIcon />
+                  <span>Address:</span>
+                </div>
+
+                <ul>
+                  <li>
+                    <a
+                      href={`https://www.google.com/maps?q=${lagosAddress}`}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      {lagosAddress}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={`https://www.google.com/maps?q=${abujaAddress}`}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      {abujaAddress}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={`https://www.google.com/maps?q=${uyoAddress}`}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      {uyoAddress}
+                    </a>
+                  </li>
+                </ul>
               </li>
               <p className={`${styles.ttl} ${styles.socialsTtl}`}>Socials</p>
               <div className={styles.socials}>

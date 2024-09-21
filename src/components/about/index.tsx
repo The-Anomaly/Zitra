@@ -5,6 +5,7 @@ import {
   teamMemberImg11,
   teamMemberImg12,
   teamMemberImg13,
+  teamMemberImg14,
   teamMemberImg2,
   teamMemberImg3,
   teamMemberImg4,
@@ -107,13 +108,26 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
       description:
         "Obiora Onyekwelu is a Graduate of Economics and Statistics from University of Benin. He is also an associate member Institute of Chartered Accountants of Nigeria. He started his career as a Corebanking Application Consultant at Appzone. Over the years he has gained vast experience in Risk Management, Finance, Branch Operations and Customer service. After 2 years in Page Financials, he moved to Eatongate Capital Limited as the Head of Operations and Finance.",
     },
-    {
-      image: teamMemberImg2,
-      name: "John Usang",
-      role: "Head, Zitra Microbusiness",
-      description:
-        "John Usang holds Bachelor of Arts from the prestigious University of Ibadan, Nigeria. He is a finance professional with over 7 years of experience in Enterprise Risk management, Credit Risk, Internal Control and Compliance. Before joining Zitra Investments, he was instrumental in formulating policies and procedures across several start-ups within the Microfinance Industry.",
+     {
+      image: teamMemberImg14,
+      name: "Kolawole Dahunsi",
+      role: "Head of business development",
+      description: "Kolawole, with 20+ years of leadership experience, joins Zitra Investment as Head of Business Development. He brings a strong banking background, having worked in various sectors. His previous roles at Skye Bank included HR and business development, where he led his branch to success. Kolawole's expertise in financial services and strategic thinking make him a valuable asset for Zitra's growth."
     },
+    {
+      image: teamMemberImg12,
+      name: "Emmanuel Njoku",
+      role: "Head, Sales and Lending",
+      description: `Has over 13 years work experience working in Finance industry , which began in Ecobank, he worked at different Branch banking operations roles. While at Stanbic IBTC was in a Sales and relationship management role, started as Personal banker to Executive Banker and then Private Banker managing HNI clients, growing Customer acquisition, increase liability and asset in the segment portfolio.
+      A graduate of Economics from DELSU, associate member Institute of Chartered Economist of Nigeria (ICEN) and MBA University of Lagos (in view).`,
+    },
+    // {
+    //   image: teamMemberImg2,
+    //   name: "John Usang",
+    //   role: "Head, Zitra Microbusiness",
+    //   description:
+    //     "John Usang holds Bachelor of Arts from the prestigious University of Ibadan, Nigeria. He is a finance professional with over 7 years of experience in Enterprise Risk management, Credit Risk, Internal Control and Compliance. Before joining Zitra Investments, he was instrumental in formulating policies and procedures across several start-ups within the Microfinance Industry.",
+    // },
     // {
     //   image: teamMemberImg3,
     //   name: "Omolola Olomoyeba",
@@ -136,25 +150,11 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
     //     "Adeolu is an experienced and revenue-driven Business Manager specialising in retail sales, Strategic Partnership and Frontend Development with over 8 years of experience working in different commercial and business operations functions, including Sales, and Business Analysis with renowned institutions like Renmoney, AIICO, Page Financials and Andela.  He has a deep understanding of the Nigerian financial services industry and has been part of many initiatives geared toward financial inclusion in the lending space.",
     // },
     {
-      image: teamMemberImg12,
-      name: "Emmanuel Njoku",
-      role: "Head, Sales and Lending",
-      description: `Has over 13 years work experience working in Finance industry , which began in Ecobank, he worked at different Branch banking operations roles. While at Stanbic IBTC was in a Sales and relationship management role, started as Personal banker to Executive Banker and then Private Banker managing HNI clients, growing Customer acquisition, increase liability and asset in the segment portfolio.
-      A graduate of Economics from DELSU, associate member Institute of Chartered Economist of Nigeria (ICEN) and MBA University of Lagos (in view).`,
-    },
-    {
       image: teamMemberImg6,
       name: "Ugochukwu Okere",
       role: "Head of Funding",
       description:
         "Ugochukwu is a Relationship Management expert with over 10 years experience spanning various prestigious Fintech Organizations and Commercial Banks. He is people oriented and has a drive for excellent customer service, relationship management, fund and investment management. He is a bottom line conscious, revenue driven business manager with experience in retail and commercial sales, strategic partnerships and deposit mobilization. He is a certified HRM, has a Bsc in Mass Comm. and an MBA from ABU zaria  (in view).",
-    },
-    {
-      image: teamMemberImg7,
-      name: "Nkechi Oseke",
-      role: "Head, Corporate Services",
-      description:
-        "Nkechi has over 6 years work experience in corporate services and customer experience, she has held several leadership positions in Service management in Page Financials.",
     },
     {
       image: teamMemberImg8,
@@ -163,6 +163,14 @@ const AboutUI: React.FC<AboutProps> = ({ submit, clearForm }) => {
       description: `Obra holds a B.Sc in Microbiology from Madonna University, Anambra; and an MBA, Business Administration from Lagos Business School.
       She has 4+ years of combined work experience in relationship management, business development, Marketing, budget management, and business management. Obra has held previous positions such as Sales Manager at Godrej Nigeria, General Manager at Amytorix Company Limited.`,
     },
+    {
+      image: teamMemberImg7,
+      name: "Nkechi Oseke",
+      role: "Head, Corporate Services",
+      description:
+        "Nkechi has over 6 years work experience in corporate services and customer experience, she has held several leadership positions in Service management in Page Financials.",
+    },
+   
     {
       image: teamMemberImg13,
       name: "Oloriegbe Sheme",
