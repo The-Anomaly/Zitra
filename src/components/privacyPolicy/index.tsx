@@ -383,7 +383,7 @@ const PrivacyPolicyUI = () => {
             <p className={styles.section__ttl}>CONTACT DETAILS</p>
             <p className={styles.section__txt2}>
               Please address questions, comments and requests regarding this
-              Notice to our DPO (dpo@zitrabank.com)  
+              Notice to our DPO (dpo@zitrainvestments.com)
             </p>
           </div>
         </section>
